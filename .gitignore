@@ -10,8 +10,7 @@
 # https://www.drupal.org/docs/develop/using-composer
 
 # Ignore configuration files that may contain sensitive information
-/web/sites/*/*settings*.php
-/web/sites/*/*services*.yml
+/web/sites/default/settings.php
 
 # Ignore paths that may contain user-generated content
 /web/sites/*/files
@@ -19,9 +18,3 @@
 /web/sites/*/private
 /web/sites/*/files-public
 /web/sites/*/files-private
-
-
-# Ignore drupal core (if not versioning drupal sources)
-/web/sites/development.services.yml
-/web/sites/example.settings.local.php
-/web/sites/example.sites.php
