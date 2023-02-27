@@ -1,0 +1,15 @@
+uuid: 52fa97a1-1b3d-4b5f-bdc9-f3bbc61712a8
+langcode: en
+status: true
+dependencies: {  }
+name: testing
+label: Testing
+effects:
+  20831c40-c71b-4690-8609-e872f513df94:
+    uuid: 20831c40-c71b-4690-8609-e872f513df94
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 700
+      height: 350
+      anchor: center-center
