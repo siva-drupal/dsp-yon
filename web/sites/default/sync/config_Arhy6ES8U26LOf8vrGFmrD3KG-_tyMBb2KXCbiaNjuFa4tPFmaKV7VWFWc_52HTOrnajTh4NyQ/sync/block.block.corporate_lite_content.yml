@@ -1,0 +1,22 @@
+uuid: f4f90d7d-8be9-4b33-9a87-93ad33b54543
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - corporate_lite
+_core:
+  default_config_hash: UR7PjFsUgmtl5CJFkzBV99rviui0a7ZspB3oTA-jaTM
+id: corporate_lite_content
+theme: corporate_lite
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

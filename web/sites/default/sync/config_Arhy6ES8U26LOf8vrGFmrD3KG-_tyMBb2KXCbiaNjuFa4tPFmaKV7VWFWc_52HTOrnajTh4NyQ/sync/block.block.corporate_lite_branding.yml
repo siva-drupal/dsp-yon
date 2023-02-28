@@ -1,0 +1,25 @@
+uuid: 9eded854-205b-40ec-946e-05fee947d441
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - corporate_lite
+_core:
+  default_config_hash: FOY9iAN49SutLVzRxl8XOBcMJITxVGNtGrNvAzRacyo
+id: corporate_lite_branding
+theme: corporate_lite
+region: header_first
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }
