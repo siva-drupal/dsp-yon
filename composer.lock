@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eca0bf03cfdb4473ac7a848c80156d2f",
+    "content-hash": "dffac263f212f57f4403f6ac2466556a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2002,6 +2002,71 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core."
+        },
+        {
+            "name": "drupal/corporate_lite",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/corporate_lite.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/corporate_lite-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "883eb4f91fea27f58cd0859e6b54cc7b9b06e29a"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1606824937",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Stavros Kounis (skounis)",
+                    "homepage": "https://www.drupal.org/u/skounis",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Soukri Kechagia (skechagia)",
+                    "homepage": "https://www.drupal.org/u/skech",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Vasilis Kechagias (vkech)",
+                    "homepage": "https://www.drupal.org/u/vkech",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Giorgos Konispoliatis (Geokon)",
+                    "homepage": "https://www.drupal.org/u/geokon",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "vkech",
+                    "homepage": "https://www.drupal.org/user/1451830"
+                }
+            ],
+            "description": "A free mobile-first Drupal 8 theme and the core of our Premium Corporate+ modern mega-theme.",
+            "homepage": "https://www.drupal.org/project/corporate_lite",
+            "support": {
+                "source": "https://git.drupalcode.org/project/corporate_lite",
+                "issues": "https://www.drupal.org/project/issues/corporate_lite"
+            }
         },
         {
             "name": "drush/drush",

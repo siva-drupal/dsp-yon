@@ -1,0 +1,20 @@
+uuid: 891d07e8-e59a-4a06-9748-a3d98473682d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - corporate_lite
+_core:
+  default_config_hash: N1qNThiWYjZNOEXGuoiYRdqMTJ83nKeVJAVkI0gnOLg
+id: corporate_lite_local_actions
+theme: corporate_lite
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

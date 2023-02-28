@@ -1,0 +1,25 @@
+uuid: 4f0865f5-3844-4fe9-ac8e-7e200b018cff
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:91e3dcad-25c5-46b8-89ca-8ffae6f70449'
+  module:
+    - block_content
+  theme:
+    - corporate_lite
+id: credits
+theme: corporate_lite
+region: sub_footer_first
+weight: -5
+provider: null
+plugin: 'block_content:91e3dcad-25c5-46b8-89ca-8ffae6f70449'
+settings:
+  id: 'block_content:91e3dcad-25c5-46b8-89ca-8ffae6f70449'
+  label: Credits
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
