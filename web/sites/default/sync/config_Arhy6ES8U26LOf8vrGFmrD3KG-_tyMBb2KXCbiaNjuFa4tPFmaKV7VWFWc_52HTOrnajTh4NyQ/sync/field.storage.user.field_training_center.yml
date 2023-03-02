@@ -1,0 +1,36 @@
+uuid: 1604d01e-c7d6-4ca4-a5b0-be15a1febf26
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_training_center
+field_name: field_training_center
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Yonphula Training Center'
+    -
+      value: '2'
+      label: 'Serzhong Training Center'
+    -
+      value: '3'
+      label: 'Phaduna Training Center'
+    -
+      value: '4'
+      label: 'Dzongkhalum Training Center'
+    -
+      value: '5'
+      label: 'Gyelposhing Training Center'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

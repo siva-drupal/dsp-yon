@@ -16,10 +16,12 @@
     ],
     "require": {
         "composer/installers": "^1.2",
+        "drupal/conditional_fields": "^4.0@alpha",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/corporate_lite": "^1.2",
+        "drupal/registration_role": "^1.1",
         "drush/drush": "^10.6"
     },
     "conflict": {

@@ -3,10 +3,33 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - field.field.user.user.field_choose_your_role
+    - field.field.user.user.field_course
+    - field.field.user.user.field_course1
+    - field.field.user.user.field_course_start_and_end_date_
+    - field.field.user.user.field_did
+    - field.field.user.user.field_did_liaison_officer_
+    - field.field.user.user.field_gender
+    - field.field.user.user.field_highe
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_military_departmen1t
+    - field.field.user.user.field_military_departmen2t
+    - field.field.user.user.field_military_department
+    - field.field.user.user.field_name
+    - field.field.user.user.field_p
+    - field.field.user.user.field_rank
+    - field.field.user.user.field_rank1
+    - field.field.user.user.field_rank2
+    - field.field.user.user.field_start_and_end_date_course_
+    - field.field.user.user.field_tenure
+    - field.field.user.user.field_term
+    - field.field.user.user.field_terms
+    - field.field.user.user.field_terms_of_service
+    - field.field.user.user.field_training_center
   module:
-    - image
+    - conditional_fields
+    - datetime
+    - text
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -16,23 +39,470 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
-    region: content
-  contact:
-    weight: 5
-    region: content
-  language:
     weight: 0
     region: content
-  timezone:
+    settings: {  }
+    third_party_settings: {  }
+  field_choose_your_role:
+    type: options_buttons
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_course:
+    weight: 13
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        e0ecbcf0-a098-4b7c-89f1-70fb5ca7e3a5:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '3'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+    type: options_select
+    region: content
+  field_course1:
+    weight: 14
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        e7a9f37c-0758-4c09-88ad-2e094303e254:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '4'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+    type: options_select
+    region: content
+  field_course_start_and_end_date_:
+    weight: 15
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        2c22348d-390c-4ec1-92f2-5b8dd4a52de2:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '3'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+    type: datetime_default
+    region: content
+  field_did:
+    third_party_settings:
+      conditional_fields:
+        4e2cb71a-e1e9-4ab5-85a6-c6ea0ff754ae:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '3'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    type: text_textfield
+    region: content
+  field_did_liaison_officer_:
+    type: text_textfield
     weight: 6
     region: content
-  user_picture:
-    type: image_image
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        c74dff6e-5abc-45e0-9c5f-f96d1540e01a:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '1'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+  field_gender:
+    weight: 4
+    settings: {  }
     third_party_settings: {  }
-    weight: -1
+    type: options_select
     region: content
-hidden: {  }
+  field_highe:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_last_name:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_military_departmen1t:
+    weight: 18
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        f81580ce-83d5-4c13-9385-767f936cb609:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '5'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+    type: options_select
+    region: content
+  field_military_departmen2t:
+    weight: 19
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        aa849ce6-6c69-474a-a7e7-166fc139e80c:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '2'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+    type: options_select
+    region: content
+  field_military_department:
+    weight: 17
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        5de0d23c-f60d-4e31-a4fc-51c9fe02335a:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '6'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+    type: options_select
+    region: content
+  field_name:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_p:
+    type: number
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_rank:
+    weight: 20
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        245ceb5f-2af7-4ba6-adee-2083dcbc7cec:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '2'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+    type: options_select
+    region: content
+  field_rank1:
+    weight: 21
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        39da4dc0-c8d4-45b0-bfcd-bb6c60f189a6:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '6'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+    type: options_select
+    region: content
+  field_rank2:
+    weight: 22
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        d2682499-0672-4f53-8c06-fb75c31d4024:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '5'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+    type: options_select
+    region: content
+  field_start_and_end_date_course_:
+    type: datetime_default
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        33d6a1c0-c46c-4070-ab53-bcaadc963d88:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '4'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+  field_tenure:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        25a9f8a1-812b-4ba3-b9a4-cfd392e78461:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '5'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+  field_term:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        5ea33c3a-ad00-43eb-8da1-9a3e5d502bd3:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '2'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+  field_terms:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        e401ba16-d258-44db-8b2a-93475d147b52:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '6'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+  field_terms_of_service:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        bee1448c-cc1f-44e3-b0e4-02fc332651a0:
+          dependee: field_choose_your_role
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '1'
+            effect: show
+            effect_options: {  }
+            selector: ''
+            reset: false
+          entity_type: user
+          bundle: user
+  field_training_center:
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  contact: true
+  language: true
+  timezone: true

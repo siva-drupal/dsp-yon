@@ -1,0 +1,21 @@
+uuid: 1664b32f-d9e0-4a41-8c62-d36aa86cdccd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_course1
+  module:
+    - options
+    - user
+id: user.user.field_course1
+field_name: field_course1
+entity_type: user
+bundle: user
+label: Course
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

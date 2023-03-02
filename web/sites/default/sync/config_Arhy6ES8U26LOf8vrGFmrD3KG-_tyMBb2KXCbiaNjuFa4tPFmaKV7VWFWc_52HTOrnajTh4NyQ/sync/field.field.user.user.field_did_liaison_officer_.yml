@@ -1,0 +1,21 @@
+uuid: abd5cb82-5f27-4558-b542-9f21bf523cac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_did_liaison_officer_
+  module:
+    - text
+    - user
+id: user.user.field_did_liaison_officer_
+field_name: field_did_liaison_officer_
+entity_type: user
+bundle: user
+label: DID
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,21 @@
+uuid: a2bd622c-a5e6-46eb-a4a2-e5cff76e926f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_training_center
+  module:
+    - options
+    - user
+id: user.user.field_training_center
+field_name: field_training_center
+entity_type: user
+bundle: user
+label: 'Training Center'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

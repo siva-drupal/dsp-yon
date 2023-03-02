@@ -1,0 +1,9 @@
+uuid: 7918fd1d-07a7-440e-9e33-0f1e63445cf2
+langcode: en
+status: true
+dependencies: {  }
+id: trainees
+label: Trainees
+weight: 3
+is_admin: null
+permissions: {  }

@@ -1,0 +1,8 @@
+uuid: 1e905445-c26a-41f0-ade7-24f3811353ae
+langcode: en
+status: true
+dependencies: {  }
+name: 'Training Center'
+vid: training_center
+description: ''
+weight: 0

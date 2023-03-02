@@ -1,0 +1,42 @@
+uuid: 00b338ed-ce6c-41bd-843f-02975e20c6d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_course1
+field_name: field_course1
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Web Development'
+    -
+      value: '2'
+      label: Coding
+    -
+      value: '3'
+      label: Driving
+    -
+      value: '4'
+      label: 'Digital Marketing'
+    -
+      value: '5'
+      label: 'App Development'
+    -
+      value: '6'
+      label: 'ICT Foundation'
+    -
+      value: '7'
+      label: Automotive
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

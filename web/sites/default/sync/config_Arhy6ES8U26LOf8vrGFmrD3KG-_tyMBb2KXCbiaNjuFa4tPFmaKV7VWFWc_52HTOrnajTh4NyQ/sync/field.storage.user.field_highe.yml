@@ -1,0 +1,39 @@
+uuid: 80e31094-31e8-4afc-9823-3c1111c95c59
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_highe
+field_name: field_highe
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Class X'
+    -
+      value: '2'
+      label: 'Class XII'
+    -
+      value: '3'
+      label: Diploma
+    -
+      value: '4'
+      label: 'Under Graduate'
+    -
+      value: '5'
+      label: 'Post Graduate'
+    -
+      value: '6'
+      label: PhD
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

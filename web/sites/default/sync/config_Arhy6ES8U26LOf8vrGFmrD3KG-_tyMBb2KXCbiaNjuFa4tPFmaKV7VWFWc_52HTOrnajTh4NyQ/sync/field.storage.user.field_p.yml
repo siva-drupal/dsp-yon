@@ -1,0 +1,20 @@
+uuid: b9a5d481-68e3-41c5-8488-244911f00e93
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_p
+field_name: field_p
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

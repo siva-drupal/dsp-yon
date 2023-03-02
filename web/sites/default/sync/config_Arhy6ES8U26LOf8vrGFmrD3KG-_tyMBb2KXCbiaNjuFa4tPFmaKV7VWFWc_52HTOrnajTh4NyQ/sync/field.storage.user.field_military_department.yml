@@ -1,0 +1,27 @@
+uuid: 2b7704ed-9b41-47a2-a1ad-59c108023b2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_military_department
+field_name: field_military_department
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Royal Bhutan Police'
+    -
+      value: '2'
+      label: 'Royal Bhutan Army'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
