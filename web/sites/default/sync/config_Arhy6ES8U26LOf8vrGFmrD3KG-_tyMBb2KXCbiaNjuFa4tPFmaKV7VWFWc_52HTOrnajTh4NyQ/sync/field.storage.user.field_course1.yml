@@ -1,39 +1,17 @@
-uuid: 00b338ed-ce6c-41bd-843f-02975e20c6d8
+uuid: c053c7cc-2e4c-45f6-bc8d-20cd6658006e
 langcode: en
 status: true
 dependencies:
   module:
-    - options
+    - taxonomy
     - user
 id: user.field_course1
 field_name: field_course1
 entity_type: user
-type: list_string
+type: entity_reference
 settings:
-  allowed_values:
-    -
-      value: '1'
-      label: 'Web Development'
-    -
-      value: '2'
-      label: Coding
-    -
-      value: '3'
-      label: Driving
-    -
-      value: '4'
-      label: 'Digital Marketing'
-    -
-      value: '5'
-      label: 'App Development'
-    -
-      value: '6'
-      label: 'ICT Foundation'
-    -
-      value: '7'
-      label: Automotive
-  allowed_values_function: ''
-module: options
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

@@ -16,6 +16,8 @@
     ],
     "require": {
         "composer/installers": "^1.2",
+        "drupal/autocomplete_deluxe": "2.0",
+        "drupal/captcha": "^1.9",
         "drupal/conditional_fields": "^4.0@alpha",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",

@@ -1,11 +1,11 @@
-uuid: 919da4f8-3b26-4e06-96e8-e3bc33bc7bf4
+uuid: 8ab63c8e-ad78-4772-b44d-512dc684d52d
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.user.field_course
+    - taxonomy.vocabulary.course
   module:
-    - options
     - user
 id: user.user.field_course
 field_name: field_course
@@ -17,5 +17,14 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      course: course
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

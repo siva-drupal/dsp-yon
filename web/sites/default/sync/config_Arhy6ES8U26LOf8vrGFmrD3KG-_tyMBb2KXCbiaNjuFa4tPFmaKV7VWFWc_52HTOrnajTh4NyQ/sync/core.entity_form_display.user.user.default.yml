@@ -27,6 +27,7 @@ dependencies:
     - field.field.user.user.field_terms_of_service
     - field.field.user.user.field_training_center
   module:
+    - autocomplete_deluxe
     - conditional_fields
     - datetime
     - text
@@ -50,11 +51,22 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_course:
-    weight: 13
-    settings: {  }
+    weight: 24
+    settings:
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      not_found_message_allow: false
+      match_operator: CONTAINS
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
+      size: 60
+      selection_handler: default
     third_party_settings:
       conditional_fields:
-        e0ecbcf0-a098-4b7c-89f1-70fb5ca7e3a5:
+        98b862c9-60ed-4f43-93dc-d8a693b0979e:
           dependee: field_choose_your_role
           settings:
             state: visible
@@ -72,14 +84,25 @@ content:
             reset: false
           entity_type: user
           bundle: user
-    type: options_select
+    type: autocomplete_deluxe
     region: content
   field_course1:
-    weight: 14
-    settings: {  }
+    weight: 25
+    settings:
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      not_found_message_allow: false
+      match_operator: CONTAINS
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
+      size: 60
+      selection_handler: default
     third_party_settings:
       conditional_fields:
-        e7a9f37c-0758-4c09-88ad-2e094303e254:
+        5ede0b14-0cc6-46f8-9c37-ee67651c62f0:
           dependee: field_choose_your_role
           settings:
             state: visible
@@ -97,7 +120,7 @@ content:
             reset: false
           entity_type: user
           bundle: user
-    type: options_select
+    type: autocomplete_deluxe
     region: content
   field_course_start_and_end_date_:
     weight: 15

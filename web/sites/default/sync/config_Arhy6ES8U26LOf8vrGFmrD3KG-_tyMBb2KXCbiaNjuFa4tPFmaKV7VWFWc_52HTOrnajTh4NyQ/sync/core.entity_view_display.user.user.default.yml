@@ -40,16 +40,18 @@ content:
   field_course:
     weight: 27
     label: above
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
-    type: list_default
+    type: entity_reference_label
     region: content
   field_course1:
     weight: 28
     label: above
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
-    type: list_default
+    type: entity_reference_label
     region: content
   field_course_start_and_end_date_:
     weight: 16
