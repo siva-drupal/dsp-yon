@@ -1,4 +1,4 @@
-timeout: '120'
+timeout: '43200'
 roles:
   administrator: administrator
   trainees: 0
