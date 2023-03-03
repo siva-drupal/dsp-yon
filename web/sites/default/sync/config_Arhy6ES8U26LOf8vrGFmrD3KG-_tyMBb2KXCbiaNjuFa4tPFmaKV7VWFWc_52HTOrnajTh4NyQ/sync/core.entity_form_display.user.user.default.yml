@@ -10,7 +10,7 @@ dependencies:
     - field.field.user.user.field_did
     - field.field.user.user.field_did_liaison_officer_
     - field.field.user.user.field_gender
-    - field.field.user.user.field_highe
+    - field.field.user.user.field_highest_qualification
     - field.field.user.user.field_last_name
     - field.field.user.user.field_military_departmen1t
     - field.field.user.user.field_military_departmen2t
@@ -51,7 +51,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_course:
-    weight: 24
+    weight: 21
     settings:
       limit: 10
       min_length: 0
@@ -87,7 +87,7 @@ content:
     type: autocomplete_deluxe
     region: content
   field_course1:
-    weight: 25
+    weight: 22
     settings:
       limit: 10
       min_length: 0
@@ -123,7 +123,7 @@ content:
     type: autocomplete_deluxe
     region: content
   field_course_start_and_end_date_:
-    weight: 15
+    weight: 13
     settings: {  }
     third_party_settings:
       conditional_fields:
@@ -203,15 +203,37 @@ content:
           bundle: user
   field_gender:
     weight: 4
-    settings: {  }
+    settings:
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      not_found_message_allow: false
+      match_operator: CONTAINS
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
+      size: 60
+      selection_handler: default
     third_party_settings: {  }
-    type: options_select
+    type: autocomplete_deluxe
     region: content
-  field_highe:
-    weight: 16
-    settings: {  }
+  field_highest_qualification:
+    weight: 23
+    settings:
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      not_found_message_allow: false
+      match_operator: CONTAINS
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
+      size: 60
+      selection_handler: default
     third_party_settings: {  }
-    type: options_select
+    type: autocomplete_deluxe
     region: content
   field_last_name:
     weight: 3
@@ -222,7 +244,7 @@ content:
     type: string_textfield
     region: content
   field_military_departmen1t:
-    weight: 18
+    weight: 15
     settings: {  }
     third_party_settings:
       conditional_fields:
@@ -247,7 +269,7 @@ content:
     type: options_select
     region: content
   field_military_departmen2t:
-    weight: 19
+    weight: 16
     settings: {  }
     third_party_settings:
       conditional_fields:
@@ -272,7 +294,7 @@ content:
     type: options_select
     region: content
   field_military_department:
-    weight: 17
+    weight: 14
     settings: {  }
     third_party_settings:
       conditional_fields:
@@ -312,7 +334,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_rank:
-    weight: 20
+    weight: 17
     settings: {  }
     third_party_settings:
       conditional_fields:
@@ -337,7 +359,7 @@ content:
     type: options_select
     region: content
   field_rank1:
-    weight: 21
+    weight: 18
     settings: {  }
     third_party_settings:
       conditional_fields:
@@ -362,7 +384,7 @@ content:
     type: options_select
     region: content
   field_rank2:
-    weight: 22
+    weight: 19
     settings: {  }
     third_party_settings:
       conditional_fields:
@@ -520,7 +542,7 @@ content:
           entity_type: user
           bundle: user
   field_training_center:
-    weight: 23
+    weight: 20
     settings: {  }
     third_party_settings: {  }
     type: options_select

@@ -10,7 +10,7 @@ dependencies:
     - field.field.user.user.field_did
     - field.field.user.user.field_did_liaison_officer_
     - field.field.user.user.field_gender
-    - field.field.user.user.field_highe
+    - field.field.user.user.field_highest_qualification
     - field.field.user.user.field_last_name
     - field.field.user.user.field_military_departmen1t
     - field.field.user.user.field_military_departmen2t
@@ -63,18 +63,20 @@ content:
     type: datetime_default
     region: content
   field_gender:
-    weight: 19
+    weight: 29
     label: above
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
-    type: list_default
+    type: entity_reference_label
     region: content
-  field_highe:
-    weight: 18
+  field_highest_qualification:
+    weight: 30
     label: above
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
-    type: list_default
+    type: entity_reference_label
     region: content
   field_last_name:
     weight: 17

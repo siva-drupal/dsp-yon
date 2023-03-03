@@ -11,7 +11,7 @@ dependencies:
     - field.field.user.user.field_did
     - field.field.user.user.field_did_liaison_officer_
     - field.field.user.user.field_gender
-    - field.field.user.user.field_highe
+    - field.field.user.user.field_highest_qualification
     - field.field.user.user.field_last_name
     - field.field.user.user.field_military_departmen1t
     - field.field.user.user.field_military_departmen2t
@@ -44,7 +44,7 @@ hidden:
   field_did: true
   field_did_liaison_officer_: true
   field_gender: true
-  field_highe: true
+  field_highest_qualification: true
   field_last_name: true
   field_military_departmen1t: true
   field_military_departmen2t: true

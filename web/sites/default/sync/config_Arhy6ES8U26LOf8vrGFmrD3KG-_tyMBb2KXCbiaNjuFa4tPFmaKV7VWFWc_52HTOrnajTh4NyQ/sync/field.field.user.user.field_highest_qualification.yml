@@ -1,17 +1,17 @@
-uuid: 4ed6ac6b-5ccf-4559-ab3e-65dd5f94dea5
+uuid: 35cd718e-8309-41c7-ab7b-2c4a80f94bf9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.user.field_gender
-    - taxonomy.vocabulary.gender
+    - field.storage.user.field_highest_qualification
+    - taxonomy.vocabulary.highest_qualification
   module:
     - user
-id: user.user.field_gender
-field_name: field_gender
+id: user.user.field_highest_qualification
+field_name: field_highest_qualification
 entity_type: user
 bundle: user
-label: Gender
+label: 'Highest Qualification'
 description: ''
 required: false
 translatable: false
@@ -21,7 +21,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      gender: gender
+      highest_qualification: highest_qualification
     sort:
       field: name
       direction: asc
