@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - search
+    - system
   theme:
     - corporate_lite
 _core:
@@ -20,4 +21,9 @@ settings:
   provider: search
   label_display: visible
   page_id: ''
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /feedback
+    negate: true
+    context_mapping: {  }

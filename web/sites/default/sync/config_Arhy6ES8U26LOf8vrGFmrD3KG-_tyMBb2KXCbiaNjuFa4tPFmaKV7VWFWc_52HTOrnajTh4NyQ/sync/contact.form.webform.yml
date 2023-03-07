@@ -1,0 +1,12 @@
+uuid: c99469a4-927f-4225-9350-4a82f862772a
+langcode: en
+status: true
+dependencies: {  }
+id: webform
+label: Webform
+recipients:
+  - Lo@gmail.com
+reply: ''
+weight: 0
+message: 'your message has been send'
+redirect: ''

@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_feed_back
     - node.type.page
   module:
     - text
     - user
+    - webform
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
@@ -22,6 +24,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_feed_back:
+    weight: 102
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
   links:
     weight: 101
     region: content

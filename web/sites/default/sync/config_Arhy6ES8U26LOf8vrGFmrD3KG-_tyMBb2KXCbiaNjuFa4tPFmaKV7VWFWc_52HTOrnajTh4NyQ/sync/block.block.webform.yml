@@ -1,0 +1,31 @@
+uuid: 967aeee2-d010-4fd3-abf8-6f2e6463afd0
+langcode: en
+status: false
+dependencies:
+  config:
+    - webform.webform.webforms
+  module:
+    - system
+    - webform
+  theme:
+    - corporate_lite
+id: webform
+theme: corporate_lite
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  provider: webform
+  label_display: visible
+  webform_id: webforms
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /feedback
+    negate: false
+    context_mapping: {  }
