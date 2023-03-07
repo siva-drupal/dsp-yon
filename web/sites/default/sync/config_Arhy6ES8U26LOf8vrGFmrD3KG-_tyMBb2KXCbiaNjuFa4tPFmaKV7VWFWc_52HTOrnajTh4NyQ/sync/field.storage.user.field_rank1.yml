@@ -1,0 +1,45 @@
+uuid: d04a2efe-234e-42f2-8600-b70c42452521
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_rank1
+field_name: field_rank1
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Captain
+    -
+      value: '2'
+      label: Lieutenant
+    -
+      value: '3'
+      label: Drimpongom
+    -
+      value: '4'
+      label: Dedrim
+    -
+      value: '5'
+      label: Drimpon
+    -
+      value: '6'
+      label: Pelpon
+    -
+      value: '7'
+      label: Peljab
+    -
+      value: '8'
+      label: Chuma
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

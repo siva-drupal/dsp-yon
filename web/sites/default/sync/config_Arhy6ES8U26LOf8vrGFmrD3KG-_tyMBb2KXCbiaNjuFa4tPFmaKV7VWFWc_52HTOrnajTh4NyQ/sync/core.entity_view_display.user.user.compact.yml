@@ -4,10 +4,30 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
-    - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - field.field.user.user.field_choose_your_role
+    - field.field.user.user.field_course
+    - field.field.user.user.field_course1
+    - field.field.user.user.field_course_start_and_end_date_
+    - field.field.user.user.field_did
+    - field.field.user.user.field_did_liaison_officer_
+    - field.field.user.user.field_gender
+    - field.field.user.user.field_highe
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_military_departmen1t
+    - field.field.user.user.field_military_departmen2t
+    - field.field.user.user.field_military_department
+    - field.field.user.user.field_name
+    - field.field.user.user.field_p
+    - field.field.user.user.field_rank
+    - field.field.user.user.field_rank1
+    - field.field.user.user.field_rank2
+    - field.field.user.user.field_start_and_end_date_course_
+    - field.field.user.user.field_tenure
+    - field.field.user.user.field_term
+    - field.field.user.user.field_terms
+    - field.field.user.user.field_terms_of_service
+    - field.field.user.user.field_training_center
   module:
-    - image
     - user
 _core:
   default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
@@ -15,15 +35,29 @@ id: user.user.compact
 targetEntityType: user
 bundle: user
 mode: compact
-content:
-  user_picture:
-    type: image
-    weight: 0
-    region: content
-    settings:
-      image_style: thumbnail
-      image_link: content
-    third_party_settings: {  }
-    label: hidden
+content: {  }
 hidden:
+  field_choose_your_role: true
+  field_course: true
+  field_course1: true
+  field_course_start_and_end_date_: true
+  field_did: true
+  field_did_liaison_officer_: true
+  field_gender: true
+  field_highe: true
+  field_last_name: true
+  field_military_departmen1t: true
+  field_military_departmen2t: true
+  field_military_department: true
+  field_name: true
+  field_p: true
+  field_rank: true
+  field_rank1: true
+  field_rank2: true
+  field_start_and_end_date_course_: true
+  field_tenure: true
+  field_term: true
+  field_terms: true
+  field_terms_of_service: true
+  field_training_center: true
   member_for: true
