@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_feed_back
     - node.type.page
   module:
     - path
     - text
+    - webform
 _core:
   default_config_hash: AD_lefuYmjsKeH3OQApsyP_nLj6ZnGaALznLQSQ0Z_o
 id: node.page.default
@@ -31,6 +33,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_feed_back:
+    weight: 121
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
   path:
     type: path
     weight: 30
