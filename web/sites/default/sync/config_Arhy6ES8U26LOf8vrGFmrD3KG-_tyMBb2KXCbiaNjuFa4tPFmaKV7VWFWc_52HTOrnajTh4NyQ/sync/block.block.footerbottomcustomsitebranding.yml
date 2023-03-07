@@ -2,10 +2,6 @@ uuid: c7e25d4b-f90f-4b16-a17d-4ca9e50e72e6
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:87d87330-cb03-478e-8c63-eb02be581986'
-  module:
-    - block_content
   theme:
     - corporate_lite
 id: footerbottomcustomsitebranding
