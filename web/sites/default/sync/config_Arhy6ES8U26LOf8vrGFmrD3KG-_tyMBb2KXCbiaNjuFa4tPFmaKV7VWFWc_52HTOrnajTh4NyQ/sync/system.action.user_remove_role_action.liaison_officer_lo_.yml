@@ -1,0 +1,14 @@
+uuid: 6f700c41-bd69-4d92-a73d-6f980e146ec6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.liaison_officer_lo_
+  module:
+    - user
+id: user_remove_role_action.liaison_officer_lo_
+label: 'Remove the Liaison Officer (LO) role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: liaison_officer_lo_

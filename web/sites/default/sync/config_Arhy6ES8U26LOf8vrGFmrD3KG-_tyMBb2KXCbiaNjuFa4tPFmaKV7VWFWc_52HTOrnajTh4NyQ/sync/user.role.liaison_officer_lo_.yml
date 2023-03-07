@@ -1,9 +1,14 @@
-uuid: 98e68adf-ba36-461d-b1f4-62575c6fc218
+uuid: 5061056f-60aa-421e-995a-d3626e81ac2a
 langcode: en
 status: true
 dependencies: {  }
 id: liaison_officer_lo_
 label: 'Liaison Officer (LO)'
-weight: 5
+weight: -7
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access profile overview'
+  - 'create liaison_officer_lo_ profile'
+  - 'delete own liaison_officer_lo_ profile'
+  - 'update own liaison_officer_lo_ profile'
+  - 'view own liaison_officer_lo_ profile'

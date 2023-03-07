@@ -1,0 +1,23 @@
+uuid: db820d58-5f35-4450-a88b-45fd8b4a35eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.essay
+  module:
+    - text
+id: node.essay.body
+field_name: body
+entity_type: node
+bundle: essay
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

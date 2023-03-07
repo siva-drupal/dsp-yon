@@ -1,0 +1,29 @@
+uuid: d44c3f31-e63d-4a81-b2e1-bef0a57e1707
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_course1
+    - profile.type.trainers
+    - taxonomy.vocabulary.course
+id: profile.trainers.field_course1
+field_name: field_course1
+entity_type: profile
+bundle: trainers
+label: Course
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      course: course
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

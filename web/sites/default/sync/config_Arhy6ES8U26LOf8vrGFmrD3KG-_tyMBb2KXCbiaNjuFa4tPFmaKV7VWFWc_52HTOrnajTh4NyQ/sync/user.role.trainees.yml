@@ -1,9 +1,14 @@
-uuid: 7918fd1d-07a7-440e-9e33-0f1e63445cf2
+uuid: a3d45898-8616-4e56-87a9-3870c9a491af
 langcode: en
 status: true
 dependencies: {  }
 id: trainees
 label: Trainees
-weight: 3
+weight: -4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access profile overview'
+  - 'create trainees profile'
+  - 'delete own trainees profile'
+  - 'update own trainees profile'
+  - 'view own trainees profile'

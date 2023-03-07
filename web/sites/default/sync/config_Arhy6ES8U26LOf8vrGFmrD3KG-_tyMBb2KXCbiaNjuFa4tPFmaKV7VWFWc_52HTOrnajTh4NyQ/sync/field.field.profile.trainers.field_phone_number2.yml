@@ -1,0 +1,23 @@
+uuid: 103785ac-7fa3-4846-bfab-9ca9f968332f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_phone_number2
+    - profile.type.trainers
+id: profile.trainers.field_phone_number2
+field_name: field_phone_number2
+entity_type: profile
+bundle: trainers
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: '+975'
+  suffix: ''
+field_type: integer

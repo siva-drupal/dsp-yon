@@ -1,0 +1,13 @@
+uuid: 0d45ad0d-b068-486a-aa91-2d6a419ab31b
+langcode: en
+status: true
+dependencies: {  }
+id: trainees
+label: Trainees
+display_label: Trainees
+multiple: false
+registration: false
+roles:
+  trainees: trainees
+allow_revisions: false
+new_revision: false

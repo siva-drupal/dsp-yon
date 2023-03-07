@@ -1,0 +1,21 @@
+uuid: c94abdae-4a55-4271-a823-022330f18dd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_did
+    - profile.type.liaison_officer_lo_
+  module:
+    - text
+id: profile.liaison_officer_lo_.field_did
+field_name: field_did
+entity_type: profile
+bundle: liaison_officer_lo_
+label: DID
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,29 @@
+uuid: fb1a34f4-65a5-4be7-ac90-5c5f04fe06e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_military_department2
+    - profile.type.matron
+    - taxonomy.vocabulary.military_department
+id: profile.matron.field_military_department2
+field_name: field_military_department2
+entity_type: profile
+bundle: matron
+label: 'Military Department'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      military_department: military_department
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

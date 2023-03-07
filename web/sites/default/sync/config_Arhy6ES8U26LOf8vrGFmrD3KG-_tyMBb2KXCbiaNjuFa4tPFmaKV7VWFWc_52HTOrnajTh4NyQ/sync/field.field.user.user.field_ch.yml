@@ -1,0 +1,21 @@
+uuid: b838fb45-a361-4dc2-8483-6f26d477fe20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_ch
+  module:
+    - options
+    - user
+id: user.user.field_ch
+field_name: field_ch
+entity_type: user
+bundle: user
+label: 'Choose your Role'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_float

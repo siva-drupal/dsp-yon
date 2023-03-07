@@ -1,0 +1,14 @@
+uuid: d2eeb264-5a42-499f-8ae5-5d20e6aae71f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.liaison_officer_lo_
+  module:
+    - user
+id: user_add_role_action.liaison_officer_lo_
+label: 'Add the Liaison Officer (LO) role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: liaison_officer_lo_

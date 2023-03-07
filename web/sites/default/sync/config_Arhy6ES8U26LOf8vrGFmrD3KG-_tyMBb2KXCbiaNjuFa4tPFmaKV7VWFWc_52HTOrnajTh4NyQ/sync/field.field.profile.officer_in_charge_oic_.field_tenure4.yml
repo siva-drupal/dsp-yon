@@ -1,0 +1,19 @@
+uuid: 0e5cc8ea-74a6-4d47-b23c-ff3cdf39031b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_tenure4
+    - profile.type.officer_in_charge_oic_
+id: profile.officer_in_charge_oic_.field_tenure4
+field_name: field_tenure4
+entity_type: profile
+bundle: officer_in_charge_oic_
+label: Tenure
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

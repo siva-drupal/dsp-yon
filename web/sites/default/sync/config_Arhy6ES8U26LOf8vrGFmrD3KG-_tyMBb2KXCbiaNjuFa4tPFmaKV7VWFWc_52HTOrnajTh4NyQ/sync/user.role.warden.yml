@@ -1,9 +1,14 @@
-uuid: f3b01c4f-b201-4d07-bb99-30cf57d41f7b
+uuid: 8f5acbc3-09cf-4bb9-930e-fd41d86d6269
 langcode: en
 status: true
 dependencies: {  }
 id: warden
 label: Warden
-weight: 7
+weight: -3
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access profile overview'
+  - 'create warden profile'
+  - 'delete own warden profile'
+  - 'update own warden profile'
+  - 'view own warden profile'

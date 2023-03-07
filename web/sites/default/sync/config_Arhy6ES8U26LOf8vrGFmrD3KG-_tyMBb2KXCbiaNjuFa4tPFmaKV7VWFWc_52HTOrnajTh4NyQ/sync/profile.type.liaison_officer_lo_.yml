@@ -1,0 +1,13 @@
+uuid: fe4b01aa-dfe9-4742-ae17-0faf9623f096
+langcode: en
+status: true
+dependencies: {  }
+id: liaison_officer_lo_
+label: 'Liaison Officer (LO)'
+display_label: 'Liaison Officer (LO)'
+multiple: false
+registration: false
+roles:
+  liaison_officer_lo_: liaison_officer_lo_
+allow_revisions: false
+new_revision: false

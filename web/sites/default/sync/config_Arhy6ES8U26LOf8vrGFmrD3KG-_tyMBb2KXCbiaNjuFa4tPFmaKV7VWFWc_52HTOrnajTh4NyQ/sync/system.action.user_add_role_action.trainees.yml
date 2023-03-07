@@ -1,0 +1,14 @@
+uuid: 9b113fa2-eac1-42d4-841f-29ce6da4d303
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.trainees
+  module:
+    - user
+id: user_add_role_action.trainees
+label: 'Add the Trainees role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: trainees

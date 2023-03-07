@@ -1,0 +1,14 @@
+uuid: dfb14260-eeaf-421a-8d8a-c46d54cc3977
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.trainees
+  module:
+    - user
+id: user_remove_role_action.trainees
+label: 'Remove the Trainees role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: trainees

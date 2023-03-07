@@ -1,0 +1,29 @@
+uuid: edc1ad8e-a4a7-407e-ae97-83af48724139
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_military_department
+    - profile.type.warden
+    - taxonomy.vocabulary.military_department
+id: profile.warden.field_military_department
+field_name: field_military_department
+entity_type: profile
+bundle: warden
+label: 'Military Department'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      military_department: military_department
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

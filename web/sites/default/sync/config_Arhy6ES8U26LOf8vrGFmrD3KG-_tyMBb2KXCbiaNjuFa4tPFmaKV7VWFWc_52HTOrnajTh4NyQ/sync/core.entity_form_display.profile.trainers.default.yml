@@ -1,0 +1,67 @@
+uuid: dd536769-5528-40bc-99f6-d5da11f75235
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.trainers.field_course1
+    - field.field.profile.trainers.field_course_start_and_end_date1
+    - field.field.profile.trainers.field_highest_qualification2
+    - field.field.profile.trainers.field_phone_number2
+    - profile.type.trainers
+  module:
+    - autocomplete_deluxe
+    - datetime
+id: profile.trainers.default
+targetEntityType: profile
+bundle: trainers
+mode: default
+content:
+  field_course1:
+    weight: 2
+    settings:
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      not_found_message_allow: false
+      match_operator: CONTAINS
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
+      size: 60
+      selection_handler: default
+    third_party_settings: {  }
+    type: autocomplete_deluxe
+    region: content
+  field_course_start_and_end_date1:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_highest_qualification2:
+    weight: 4
+    settings:
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      not_found_message_allow: false
+      match_operator: CONTAINS
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
+      size: 60
+      selection_handler: default
+    third_party_settings: {  }
+    type: autocomplete_deluxe
+    region: content
+  field_phone_number2:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  is_default: true

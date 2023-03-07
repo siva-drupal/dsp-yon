@@ -1,9 +1,14 @@
-uuid: f0d59744-b7d0-443d-ba07-2f93b02e7e2a
+uuid: 2afe8d1a-2b25-4abf-8095-cb3f3655aaa9
 langcode: en
 status: true
 dependencies: {  }
 id: officer_in_charge_oic_
 label: 'Officer IN charge (OIC)'
-weight: 6
+weight: -6
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access profile overview'
+  - 'create officer_in_charge_oic_ profile'
+  - 'delete own officer_in_charge_oic_ profile'
+  - 'update own officer_in_charge_oic_ profile'
+  - 'view own officer_in_charge_oic_ profile'

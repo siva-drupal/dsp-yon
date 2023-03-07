@@ -3,31 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_choose_your_role
-    - field.field.user.user.field_course
-    - field.field.user.user.field_course1
-    - field.field.user.user.field_course_start_and_end_date_
-    - field.field.user.user.field_did
-    - field.field.user.user.field_did_liaison_officer_
+    - field.field.user.user.field_ch
     - field.field.user.user.field_gender
-    - field.field.user.user.field_highe
     - field.field.user.user.field_last_name
-    - field.field.user.user.field_military_departmen1t
-    - field.field.user.user.field_military_departmen2t
-    - field.field.user.user.field_military_department
     - field.field.user.user.field_name
-    - field.field.user.user.field_p
-    - field.field.user.user.field_rank
-    - field.field.user.user.field_rank1
-    - field.field.user.user.field_rank2
-    - field.field.user.user.field_start_and_end_date_course_
-    - field.field.user.user.field_tenure
-    - field.field.user.user.field_term
-    - field.field.user.user.field_terms
-    - field.field.user.user.field_terms_of_service
     - field.field.user.user.field_training_center
   module:
-    - datetime
     - options
     - user
 _core:
@@ -37,113 +18,52 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_course:
-    weight: 27
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_course1:
-    weight: 28
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_course_start_and_end_date_:
-    weight: 16
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_gender:
-    weight: 19
+  field_ch:
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
-  field_highe:
-    weight: 18
+  field_gender:
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_last_name:
-    weight: 17
+    weight: 3
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_military_departmen1t:
-    weight: 21
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
+  field_name:
+    type: string
+    weight: 2
     region: content
-  field_military_departmen2t:
-    weight: 22
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: list_default
-    region: content
-  field_military_department:
-    weight: 20
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_rank:
-    weight: 23
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_rank1:
-    weight: 24
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_rank2:
-    weight: 25
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   field_training_center:
-    weight: 26
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   member_for:
-    weight: 5
+    weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  field_choose_your_role: true
-  field_did: true
-  field_did_liaison_officer_: true
-  field_name: true
-  field_p: true
-  field_start_and_end_date_course_: true
-  field_tenure: true
-  field_term: true
-  field_terms: true
-  field_terms_of_service: true
+  liaison_officer_lo__profiles: true
+  matron_profiles: true
+  officer_in_charge_oic__profiles: true
+  trainees_profiles: true
+  trainers_profiles: true
+  warden_profiles: true

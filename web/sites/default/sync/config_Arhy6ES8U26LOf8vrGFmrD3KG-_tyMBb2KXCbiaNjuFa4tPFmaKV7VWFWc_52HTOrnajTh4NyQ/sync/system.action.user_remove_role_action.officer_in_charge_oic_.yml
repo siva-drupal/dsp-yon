@@ -1,0 +1,14 @@
+uuid: 04df475c-86cb-4a14-88f5-3131fdaac1f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.officer_in_charge_oic_
+  module:
+    - user
+id: user_remove_role_action.officer_in_charge_oic_
+label: 'Remove the Officer IN charge (OIC) role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: officer_in_charge_oic_

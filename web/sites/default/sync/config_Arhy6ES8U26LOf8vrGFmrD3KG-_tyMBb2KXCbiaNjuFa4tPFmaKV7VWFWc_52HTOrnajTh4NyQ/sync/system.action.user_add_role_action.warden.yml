@@ -1,0 +1,14 @@
+uuid: e874fb3f-5f4d-4961-868d-aaceece82ffe
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.warden
+  module:
+    - user
+id: user_add_role_action.warden
+label: 'Add the Warden role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: warden

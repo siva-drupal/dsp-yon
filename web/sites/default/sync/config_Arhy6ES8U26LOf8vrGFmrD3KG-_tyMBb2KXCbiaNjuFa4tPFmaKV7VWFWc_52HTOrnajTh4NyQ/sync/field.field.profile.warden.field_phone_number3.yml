@@ -1,0 +1,19 @@
+uuid: 4c415e6d-1d53-4612-812d-38fa704d4079
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_phone_number3
+    - profile.type.warden
+id: profile.warden.field_phone_number3
+field_name: field_phone_number3
+entity_type: profile
+bundle: warden
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

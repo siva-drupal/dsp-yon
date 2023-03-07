@@ -1,0 +1,43 @@
+uuid: ccfddcf2-e895-4bb8-8908-c500e4720e69
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - options
+    - user
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: user.field_ch
+field_name: field_ch
+entity_type: user
+type: list_float
+settings:
+  allowed_values:
+    -
+      value: !!float 1
+      label: 'Liasion Officer (LO)'
+    -
+      value: !!float 2
+      label: 'Officer Incharge (OIC)'
+    -
+      value: !!float 3
+      label: Trainees
+    -
+      value: !!float 4
+      label: Trainers
+    -
+      value: !!float 5
+      label: Warden
+    -
+      value: !!float 6
+      label: Matron
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

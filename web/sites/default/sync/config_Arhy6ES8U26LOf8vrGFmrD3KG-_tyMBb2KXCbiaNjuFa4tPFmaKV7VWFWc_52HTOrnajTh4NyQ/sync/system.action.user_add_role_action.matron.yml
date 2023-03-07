@@ -1,0 +1,14 @@
+uuid: 5790376e-f4df-47f9-a197-e6e3b1d37577
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.matron
+  module:
+    - user
+id: user_add_role_action.matron
+label: 'Add the Matron role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: matron

@@ -1,0 +1,57 @@
+uuid: df504c01-e8e9-4440-a533-ad252ed381de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.warden.field_highest_qualification3
+    - field.field.profile.warden.field_military_department
+    - field.field.profile.warden.field_phone_number3
+    - field.field.profile.warden.field_rank1
+    - field.field.profile.warden.field_tenure2
+    - profile.type.warden
+id: profile.warden.default
+targetEntityType: profile
+bundle: warden
+mode: default
+content:
+  field_highest_qualification3:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_military_department:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_phone_number3:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_rank1:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_tenure2:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

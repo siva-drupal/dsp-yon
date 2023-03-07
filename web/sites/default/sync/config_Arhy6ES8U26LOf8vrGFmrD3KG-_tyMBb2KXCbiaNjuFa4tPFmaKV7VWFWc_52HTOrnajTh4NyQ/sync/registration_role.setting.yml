@@ -1,4 +1,11 @@
-role_to_select: {  }
-registration_mode: user
+role_to_select:
+  administrator: administrator
+  liaison_officer_lo_: '0'
+  officer_in_charge_oic_: '0'
+  trainer: '0'
+  trainees: '0'
+  warden: '0'
+  matron: '0'
+registration_mode: admin
 _core:
   default_config_hash: o1wWkhSOJotsHFgvzESaUOiTWhLak62cKBDyEtewAIM

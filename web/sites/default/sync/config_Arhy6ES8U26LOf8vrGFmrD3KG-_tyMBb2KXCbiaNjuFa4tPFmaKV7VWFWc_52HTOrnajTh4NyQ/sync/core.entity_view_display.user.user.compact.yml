@@ -4,30 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
-    - field.field.user.user.field_choose_your_role
-    - field.field.user.user.field_course
-    - field.field.user.user.field_course1
-    - field.field.user.user.field_course_start_and_end_date_
-    - field.field.user.user.field_did
-    - field.field.user.user.field_did_liaison_officer_
+    - field.field.user.user.field_ch
     - field.field.user.user.field_gender
-    - field.field.user.user.field_highe
     - field.field.user.user.field_last_name
-    - field.field.user.user.field_military_departmen1t
-    - field.field.user.user.field_military_departmen2t
-    - field.field.user.user.field_military_department
     - field.field.user.user.field_name
-    - field.field.user.user.field_p
-    - field.field.user.user.field_rank
-    - field.field.user.user.field_rank1
-    - field.field.user.user.field_rank2
-    - field.field.user.user.field_start_and_end_date_course_
-    - field.field.user.user.field_tenure
-    - field.field.user.user.field_term
-    - field.field.user.user.field_terms
-    - field.field.user.user.field_terms_of_service
     - field.field.user.user.field_training_center
   module:
+    - options
     - user
 _core:
   default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
@@ -35,29 +18,95 @@ id: user.user.compact
 targetEntityType: user
 bundle: user
 mode: compact
-content: {  }
-hidden:
-  field_choose_your_role: true
-  field_course: true
-  field_course1: true
-  field_course_start_and_end_date_: true
-  field_did: true
-  field_did_liaison_officer_: true
-  field_gender: true
-  field_highe: true
-  field_last_name: true
-  field_military_departmen1t: true
-  field_military_departmen2t: true
-  field_military_department: true
-  field_name: true
-  field_p: true
-  field_rank: true
-  field_rank1: true
-  field_rank2: true
-  field_start_and_end_date_course_: true
-  field_tenure: true
-  field_term: true
-  field_terms: true
-  field_terms_of_service: true
-  field_training_center: true
-  member_for: true
+content:
+  field_ch:
+    type: list_key
+    weight: 11
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_gender:
+    type: list_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_last_name:
+    type: string
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_name:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_training_center:
+    type: list_default
+    weight: 3
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  liaison_officer_lo__profiles:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  matron_profiles:
+    type: entity_reference_label
+    weight: 5
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  member_for:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  officer_in_charge_oic__profiles:
+    type: entity_reference_label
+    weight: 6
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  trainees_profiles:
+    type: entity_reference_label
+    weight: 7
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  trainers_profiles:
+    type: entity_reference_label
+    weight: 8
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  warden_profiles:
+    type: entity_reference_label
+    weight: 9
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden: {  }

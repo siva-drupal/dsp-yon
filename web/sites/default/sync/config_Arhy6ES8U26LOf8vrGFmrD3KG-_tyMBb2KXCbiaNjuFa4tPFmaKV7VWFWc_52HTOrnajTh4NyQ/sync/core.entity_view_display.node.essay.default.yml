@@ -1,0 +1,37 @@
+uuid: 2de140e4-6cad-482e-ae87-758233c40774
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.essay.body
+    - field.field.node.essay.field_argumentative
+    - node.type.essay
+  module:
+    - options
+    - text
+    - user
+id: node.essay.default
+targetEntityType: node
+bundle: essay
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_argumentative:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

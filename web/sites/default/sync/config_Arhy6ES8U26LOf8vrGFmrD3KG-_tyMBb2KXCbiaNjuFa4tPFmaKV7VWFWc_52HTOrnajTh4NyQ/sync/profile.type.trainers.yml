@@ -1,0 +1,13 @@
+uuid: 0b2473e9-d15c-4710-bdc2-86a77a4adc6c
+langcode: en
+status: true
+dependencies: {  }
+id: trainers
+label: Trainers
+display_label: Trainers
+multiple: false
+registration: false
+roles:
+  trainer: trainer
+allow_revisions: false
+new_revision: false
