@@ -1,0 +1,17 @@
+uuid: 37ceb936-0dfd-4cd2-9fe2-eea1745ce50a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Home slider'
+type: home_slider
+description: 'Content type to display the home slider.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
