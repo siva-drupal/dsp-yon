@@ -10,7 +10,7 @@ _core:
   default_config_hash: FOY9iAN49SutLVzRxl8XOBcMJITxVGNtGrNvAzRacyo
 id: corporate_lite_branding
 theme: corporate_lite
-region: header_first
+region: header_top_first
 weight: -6
 provider: null
 plugin: system_branding_block
