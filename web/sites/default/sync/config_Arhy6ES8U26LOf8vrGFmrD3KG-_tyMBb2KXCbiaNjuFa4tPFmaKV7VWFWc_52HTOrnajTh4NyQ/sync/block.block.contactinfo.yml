@@ -1,9 +1,9 @@
-uuid: ad749a52-1437-4689-b22e-f203732d9024
+uuid: b5683372-addd-45c6-8e99-2c067fcc5f9e
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:84df4716-ec99-4ef6-bfd4-423cbbb30cf5'
+    - 'block_content:basic:0966bcab-70b5-49ac-a5fc-80655af297c1'
   module:
     - block_content
     - system
@@ -14,10 +14,10 @@ theme: corporate_lite
 region: sidebar_second
 weight: 0
 provider: null
-plugin: 'block_content:84df4716-ec99-4ef6-bfd4-423cbbb30cf5'
+plugin: 'block_content:0966bcab-70b5-49ac-a5fc-80655af297c1'
 settings:
-  id: 'block_content:84df4716-ec99-4ef6-bfd4-423cbbb30cf5'
-  label: 'Contact Info'
+  id: 'block_content:0966bcab-70b5-49ac-a5fc-80655af297c1'
+  label: 'Contact info'
   provider: block_content
   label_display: '0'
   status: true

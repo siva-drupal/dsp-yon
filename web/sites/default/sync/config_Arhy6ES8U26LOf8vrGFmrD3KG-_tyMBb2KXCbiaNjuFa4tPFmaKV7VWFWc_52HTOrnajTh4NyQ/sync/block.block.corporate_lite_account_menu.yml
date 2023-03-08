@@ -27,6 +27,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /feedback
+    pages: "/feedback\r\n<front>"
     negate: true
     context_mapping: {  }

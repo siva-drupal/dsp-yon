@@ -88,9 +88,10 @@ ul.menu li.menu-item--expanded > a:hover:before {
   margin: 0;
   list-style: none;
   text-align: right;
-  display: flex;
- align-items: center;
- margin-top: 60px;
+  display:flex;
+  align-items: center;
+  margin-top:115px;
+  margin-left: -250px;
 }
 .header__section ul.menu {
   padding: 5px 0;
@@ -870,4 +871,7 @@ ul.menu.sf-menu.sf-accordion li.sf-expanded > a.sf-accordion-button:after {
 .region--light-typography ul.menu.sf-accordion li > span {
   border-bottom-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
+}
+.view-frontpage h1{
+  text-align: center;
 }

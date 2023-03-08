@@ -1,10 +1,10 @@
 timeout: '43200'
 roles:
   administrator: administrator
-  trainees: 0
-  trainers: 0
   liaison_officer_lo_: 0
   officer_in_charge_oic_: 0
+  trainer: 0
+  trainees: 0
   warden: 0
   matron: 0
 enable: 1

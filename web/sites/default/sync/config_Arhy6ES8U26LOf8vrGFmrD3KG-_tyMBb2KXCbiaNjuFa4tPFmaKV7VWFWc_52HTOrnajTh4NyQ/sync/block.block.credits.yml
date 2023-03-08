@@ -1,17 +1,21 @@
-uuid: 4f0865f5-3844-4fe9-ac8e-7e200b018cff
+uuid: 1a85d40a-264e-49fe-9f8c-a3ebf3947dec
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:b75ca486-d491-4e4c-803f-6c1387663b91'
+  module:
+    - block_content
   theme:
     - corporate_lite
 id: credits
 theme: corporate_lite
 region: sub_footer_first
-weight: -5
+weight: -7
 provider: null
-plugin: 'block_content:91e3dcad-25c5-46b8-89ca-8ffae6f70449'
+plugin: 'block_content:b75ca486-d491-4e4c-803f-6c1387663b91'
 settings:
-  id: 'block_content:91e3dcad-25c5-46b8-89ca-8ffae6f70449'
+  id: 'block_content:b75ca486-d491-4e4c-803f-6c1387663b91'
   label: Credits
   provider: block_content
   label_display: '0'

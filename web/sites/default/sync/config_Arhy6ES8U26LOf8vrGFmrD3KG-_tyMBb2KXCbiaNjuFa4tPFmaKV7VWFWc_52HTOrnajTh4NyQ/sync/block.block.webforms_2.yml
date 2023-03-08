@@ -1,22 +1,25 @@
-uuid: 806bfeb6-7932-4a23-a626-a4ad5e2042b5
+uuid: 5b0aceb7-17f4-493f-9422-3243d44299c8
 langcode: en
-status: false
+status: true
 dependencies:
+  content:
+    - 'block_content:basic:c2ec6d1b-af9d-45a0-aa4c-6c7194e9a85e'
   module:
+    - block_content
     - system
   theme:
     - corporate_lite
-id: webforms
+id: webforms_2
 theme: corporate_lite
 region: content
 weight: 0
 provider: null
-plugin: 'block_content:a2d9b87f-9a0a-48f1-9277-8cda6f650647'
+plugin: 'block_content:c2ec6d1b-af9d-45a0-aa4c-6c7194e9a85e'
 settings:
-  id: 'block_content:a2d9b87f-9a0a-48f1-9277-8cda6f650647'
-  label: webforms
+  id: 'block_content:c2ec6d1b-af9d-45a0-aa4c-6c7194e9a85e'
+  label: Webforms
   provider: block_content
-  label_display: '0'
+  label_display: visible
   status: true
   info: ''
   view_mode: full

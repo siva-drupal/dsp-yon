@@ -1,17 +1,21 @@
-uuid: c7e25d4b-f90f-4b16-a17d-4ca9e50e72e6
+uuid: eba5a7a5-a04f-485b-9df7-dc4ad0061d09
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:c01d8987-849f-401d-95fd-c8bcd84f12ba'
+  module:
+    - block_content
   theme:
     - corporate_lite
 id: footerbottomcustomsitebranding
 theme: corporate_lite
 region: sub_footer_first
-weight: -6
+weight: -8
 provider: null
-plugin: 'block_content:87d87330-cb03-478e-8c63-eb02be581986'
+plugin: 'block_content:c01d8987-849f-401d-95fd-c8bcd84f12ba'
 settings:
-  id: 'block_content:87d87330-cb03-478e-8c63-eb02be581986'
+  id: 'block_content:c01d8987-849f-401d-95fd-c8bcd84f12ba'
   label: 'Footer bottom custom site branding'
   provider: block_content
   label_display: '0'
