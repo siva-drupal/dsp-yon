@@ -200,7 +200,7 @@ features:
   comment_user_verification: true
   favicon: true
 logo:
-  use_default: false
+  use_default: true
   path: 'public://logo_0.png'
 favicon:
   use_default: true

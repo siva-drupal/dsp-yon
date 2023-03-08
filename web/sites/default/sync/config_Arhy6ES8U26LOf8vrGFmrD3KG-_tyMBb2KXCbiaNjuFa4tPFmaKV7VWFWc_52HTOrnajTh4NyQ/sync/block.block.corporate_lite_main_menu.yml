@@ -12,7 +12,7 @@ _core:
   default_config_hash: TYYAekRfNsVSTeWFZqKls4qjo4oIJ_-b8AfowK3_cSE
 id: corporate_lite_main_menu
 theme: corporate_lite
-region: header
+region: header_top_second
 weight: -5
 provider: null
 plugin: 'system_menu_block:main'
