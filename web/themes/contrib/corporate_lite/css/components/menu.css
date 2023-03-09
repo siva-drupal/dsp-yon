@@ -86,12 +86,13 @@ ul.menu li.menu-item--expanded > a:hover:before {
 /*Main navigation*/
 .header-container ul.menu {
   margin: 0;
+  /* padding-bottom: 80px; */
   list-style: none;
   text-align: right;
-  display:flex;
+  display: flex;
   align-items: center;
-  margin-top:115px;
-  margin-left: -250px;
+  margin-top: 115px;
+  margin-left: -260px;
 }
 .header__section ul.menu {
   padding: 5px 0;
