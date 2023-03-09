@@ -1,0 +1,20 @@
+uuid: fd8d0ffa-4d14-4e6b-8c26-ecb205548575
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_tenure
+  module:
+    - user
+id: user.user.field_tenure
+field_name: field_tenure
+entity_type: user
+bundle: user
+label: Tenure
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

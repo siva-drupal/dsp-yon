@@ -1,0 +1,21 @@
+uuid: 4d5b97c6-1e1b-4e60-8548-53b9db770c31
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_tenure
+field_name: field_tenure
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

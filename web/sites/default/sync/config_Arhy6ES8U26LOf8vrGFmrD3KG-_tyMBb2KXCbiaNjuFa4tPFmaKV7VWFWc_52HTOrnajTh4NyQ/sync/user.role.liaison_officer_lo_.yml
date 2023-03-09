@@ -1,0 +1,9 @@
+uuid: 98e68adf-ba36-461d-b1f4-62575c6fc218
+langcode: en
+status: true
+dependencies: {  }
+id: liaison_officer_lo_
+label: 'Liaison Officer (LO)'
+weight: 5
+is_admin: null
+permissions: {  }
