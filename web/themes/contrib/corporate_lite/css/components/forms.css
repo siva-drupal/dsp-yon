@@ -6,6 +6,11 @@
 .form-actions {
   margin: 20px 0;
 }
+
+#edit-field-events-course-target-id {
+  margin: -10px 0;
+  padding: 5px 10px 5px 10px;
+}
 input.form-text,
 input.form-tel,
 input.form-email,
@@ -185,3 +190,35 @@ input[type="checkbox"] {
 :-ms-input-placeholder {
   color: #9c9c9c;
 }
+
+a.views-more-link {
+  /*font-size: medium;
+  font-weight: bold;
+  margin: 20px 0;
+  background-color: #ccc;
+  border-radius: 5px;
+  padding: 5px 20px;*/
+  color: #b6b6ff
+
+}
+
+.field-content p {
+  margin: 20px 0;
+}
+/* .field-content a{
+  font-size: 2em;
+  font-weight: bold;
+} */
+
+.form-actions,
+#edit-submit-events {
+  margin: 20px 0;
+  padding: 5px 10px;
+
+}
+
+.field__item,
+time.datetime {
+  margin-bottom: 20px;
+} 
+

@@ -1,0 +1,40 @@
+uuid: cfe2b990-f7ba-4049-b45f-3a7d3c52493b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.events.body
+    - field.field.node.events.comment
+    - field.field.node.events.field_chief_guest
+    - field.field.node.events.field_events_course_
+    - field.field.node.events.field_events_date
+    - field.field.node.events.field_events_image
+    - node.type.events
+  module:
+    - text
+    - user
+id: node.events.teaser
+targetEntityType: node
+bundle: events
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment: true
+  field_chief_guest: true
+  field_events_course_: true
+  field_events_date: true
+  field_events_image: true

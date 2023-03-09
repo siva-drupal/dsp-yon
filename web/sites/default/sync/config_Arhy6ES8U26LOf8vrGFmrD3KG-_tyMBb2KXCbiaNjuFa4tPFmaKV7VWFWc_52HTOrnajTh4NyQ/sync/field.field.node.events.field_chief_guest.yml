@@ -1,0 +1,29 @@
+uuid: 202bd1a3-cef1-4462-ba2a-6ce293bcb699
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_chief_guest
+    - node.type.events
+    - taxonomy.vocabulary.chief_guest
+id: node.events.field_chief_guest
+field_name: field_chief_guest
+entity_type: node
+bundle: events
+label: 'Chief Guest'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      chief_guest: chief_guest
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
