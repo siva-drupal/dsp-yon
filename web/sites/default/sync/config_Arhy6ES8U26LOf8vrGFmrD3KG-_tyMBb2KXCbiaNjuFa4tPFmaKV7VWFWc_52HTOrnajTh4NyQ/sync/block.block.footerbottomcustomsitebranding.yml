@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   content:
-    - "block_content:basic:c01d8987-849f-401d-95fd-c8bcd84f12ba"
+    - 'block_content:basic:c01d8987-849f-401d-95fd-c8bcd84f12ba'
   module:
     - block_content
   theme:
@@ -13,13 +13,13 @@ theme: corporate_lite
 region: sub_footer_first
 weight: -8
 provider: null
-plugin: "block_content:c01d8987-849f-401d-95fd-c8bcd84f12ba"
+plugin: 'block_content:c01d8987-849f-401d-95fd-c8bcd84f12ba'
 settings:
-  id: "block_content:c01d8987-849f-401d-95fd-c8bcd84f12ba"
-  label: "Footer bottom custom site branding"
+  id: 'block_content:c01d8987-849f-401d-95fd-c8bcd84f12ba'
+  label: 'Footer bottom custom site branding'
   provider: block_content
-  label_display: "0"
+  label_display: '0'
   status: true
-  info: ""
+  info: ''
   view_mode: full
-visibility: {}
+visibility: {  }
