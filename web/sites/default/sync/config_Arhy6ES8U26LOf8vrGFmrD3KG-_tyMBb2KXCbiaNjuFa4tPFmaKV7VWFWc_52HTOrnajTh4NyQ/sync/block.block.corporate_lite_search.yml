@@ -20,10 +20,10 @@ settings:
   label: Search
   provider: search
   label_display: visible
-  page_id: ''
+  page_id: ""
 visibility:
   request_path:
     id: request_path
     pages: "/feedback\r\n<front>"
     negate: true
-    context_mapping: {  }
+    context_mapping: {}

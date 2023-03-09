@@ -11,18 +11,18 @@ theme: corporate_lite
 region: content
 weight: 0
 provider: null
-plugin: 'block_content:a2d9b87f-9a0a-48f1-9277-8cda6f650647'
+plugin: "block_content:a2d9b87f-9a0a-48f1-9277-8cda6f650647"
 settings:
-  id: 'block_content:a2d9b87f-9a0a-48f1-9277-8cda6f650647'
+  id: "block_content:a2d9b87f-9a0a-48f1-9277-8cda6f650647"
   label: webforms
   provider: block_content
-  label_display: '0'
+  label_display: "0"
   status: true
-  info: ''
+  info: ""
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "<front>"
     negate: false
-    context_mapping: {  }
+    context_mapping: {}

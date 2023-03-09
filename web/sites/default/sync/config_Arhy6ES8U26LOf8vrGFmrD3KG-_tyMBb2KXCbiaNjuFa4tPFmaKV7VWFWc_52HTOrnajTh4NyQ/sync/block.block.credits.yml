@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:b75ca486-d491-4e4c-803f-6c1387663b91'
+    - "block_content:basic:b75ca486-d491-4e4c-803f-6c1387663b91"
   module:
     - block_content
   theme:
@@ -13,13 +13,13 @@ theme: corporate_lite
 region: sub_footer_first
 weight: -7
 provider: null
-plugin: 'block_content:b75ca486-d491-4e4c-803f-6c1387663b91'
+plugin: "block_content:b75ca486-d491-4e4c-803f-6c1387663b91"
 settings:
-  id: 'block_content:b75ca486-d491-4e4c-803f-6c1387663b91'
+  id: "block_content:b75ca486-d491-4e4c-803f-6c1387663b91"
   label: Credits
   provider: block_content
-  label_display: '0'
+  label_display: "0"
   status: true
-  info: ''
+  info: ""
   view_mode: full
-visibility: {  }
+visibility: {}
