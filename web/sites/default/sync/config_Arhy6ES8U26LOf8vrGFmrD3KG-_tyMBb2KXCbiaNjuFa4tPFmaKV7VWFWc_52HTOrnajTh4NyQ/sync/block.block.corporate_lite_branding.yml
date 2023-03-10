@@ -11,7 +11,7 @@ _core:
 id: corporate_lite_branding
 theme: corporate_lite
 region: header_top_first
-weight: -6
+weight: -9
 provider: null
 plugin: system_branding_block
 settings:

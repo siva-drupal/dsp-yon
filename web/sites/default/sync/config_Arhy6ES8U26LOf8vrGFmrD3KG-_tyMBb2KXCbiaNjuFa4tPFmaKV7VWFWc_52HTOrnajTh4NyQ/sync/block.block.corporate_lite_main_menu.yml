@@ -13,7 +13,7 @@ _core:
 id: corporate_lite_main_menu
 theme: corporate_lite
 region: header_top_second
-weight: -5
+weight: -9
 provider: null
 plugin: 'system_menu_block:main'
 settings:
