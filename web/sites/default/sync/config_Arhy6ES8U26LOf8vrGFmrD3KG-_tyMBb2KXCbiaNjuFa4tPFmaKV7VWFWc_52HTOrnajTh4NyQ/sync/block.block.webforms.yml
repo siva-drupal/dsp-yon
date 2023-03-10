@@ -9,7 +9,7 @@ dependencies:
 id: webforms
 theme: corporate_lite
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: 'block_content:a2d9b87f-9a0a-48f1-9277-8cda6f650647'
 settings:
