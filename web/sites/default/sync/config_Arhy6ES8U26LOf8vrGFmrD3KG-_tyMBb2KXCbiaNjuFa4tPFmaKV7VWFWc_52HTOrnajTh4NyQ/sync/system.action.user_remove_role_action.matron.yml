@@ -1,0 +1,14 @@
+uuid: 6ac0298c-3dc6-44c7-b86d-275df7dc48c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.matron
+  module:
+    - user
+id: user_remove_role_action.matron
+label: 'Remove the Matron role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: matron

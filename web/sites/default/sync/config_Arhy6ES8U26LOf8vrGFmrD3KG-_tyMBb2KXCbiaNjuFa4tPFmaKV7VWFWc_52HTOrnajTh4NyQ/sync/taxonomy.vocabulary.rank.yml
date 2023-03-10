@@ -1,0 +1,8 @@
+uuid: 210c5e69-d4db-4478-a0ca-1df3ae208cc2
+langcode: en
+status: true
+dependencies: {  }
+name: Rank
+vid: rank
+description: ''
+weight: 0

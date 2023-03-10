@@ -1,0 +1,13 @@
+uuid: d71dc9dd-fe1d-4d4a-b32f-fc0fa8e76829
+langcode: en
+status: true
+dependencies: {  }
+id: officer_in_charge_oic_
+label: 'Officer IN charge (OIC)'
+display_label: 'Officer IN charge (OIC)'
+multiple: false
+registration: false
+roles:
+  officer_in_charge_oic_: officer_in_charge_oic_
+allow_revisions: false
+new_revision: false

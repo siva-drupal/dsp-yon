@@ -1,0 +1,23 @@
+uuid: 5e7cc55d-7bbd-4fd2-9a12-16cb6bcf784e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_p
+    - profile.type.officer_in_charge_oic_
+id: profile.officer_in_charge_oic_.field_p
+field_name: field_p
+entity_type: profile
+bundle: officer_in_charge_oic_
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: '+975'
+  suffix: ''
+field_type: integer
