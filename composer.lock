@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1300c51cc02ee9924993604fe45a10dc",
+    "content-hash": "ada43adeb4e4bd02389adb6c086ea80d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2702,6 +2702,64 @@
             }
         },
         {
+            "name": "drupal/fivestar",
+            "version": "1.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fivestar.git",
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fivestar-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "f7feee4ff885838c2ed68c2ced4d58ea86c445bc"
+            },
+            "require": {
+                "drupal/core": "^8.8.2 || ^9",
+                "drupal/votingapi": "^3.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1677614676",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "dbt102",
+                    "homepage": "https://www.drupal.org/user/338300"
+                },
+                {
+                    "name": "ericduran",
+                    "homepage": "https://www.drupal.org/user/244460"
+                },
+                {
+                    "name": "init90",
+                    "homepage": "https://www.drupal.org/user/1322186"
+                },
+                {
+                    "name": "TR",
+                    "homepage": "https://www.drupal.org/user/202830"
+                }
+            ],
+            "description": "Enables fivestar ratings on content, users, etc.",
+            "homepage": "https://www.drupal.org/project/fivestar",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fivestar",
+                "issues": "https://www.drupal.org/project/issues/fivestar"
+            }
+        },
+        {
             "name": "drupal/flexslider",
             "version": "2.0.0",
             "source": {
@@ -3155,6 +3213,78 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "https://git.drupalcode.org/project/token"
+            }
+        },
+        {
+            "name": "drupal/votingapi",
+            "version": "3.0.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/votingapi.git",
+                "reference": "8.x-3.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/votingapi-8.x-3.0-beta3.zip",
+                "reference": "8.x-3.0-beta3",
+                "shasum": "6b5d05f36dc7937a4e2fc676153ccbcf267eda14"
+            },
+            "require": {
+                "drupal/core": "^8.8.2 || ^9"
+            },
+            "require-dev": {
+                "drupal/token": "^1.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.0-beta3",
+                    "datestamp": "1639528074",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "eaton",
+                    "homepage": "https://www.drupal.org/user/16496"
+                },
+                {
+                    "name": "pedrorocha",
+                    "homepage": "https://www.drupal.org/user/218937"
+                },
+                {
+                    "name": "pifagor",
+                    "homepage": "https://www.drupal.org/user/2375692"
+                },
+                {
+                    "name": "torotil",
+                    "homepage": "https://www.drupal.org/user/865256"
+                },
+                {
+                    "name": "TR",
+                    "homepage": "https://www.drupal.org/user/202830"
+                }
+            ],
+            "description": "Voting API",
+            "homepage": "https://www.drupal.org/project/votingapi",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/votingapi",
+                "issues": "https://drupal.org/project/issues/votingapi"
             }
         },
         {
@@ -7542,7 +7672,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/conditional_fields": 15
+        "drupal/conditional_fields": 15,
+        "drupal/fivestar": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
