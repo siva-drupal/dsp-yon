@@ -1,0 +1,18 @@
+uuid: da5a7477-5d3e-4a12-a8d9-35ff06ac46c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: essay
+type: essay
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

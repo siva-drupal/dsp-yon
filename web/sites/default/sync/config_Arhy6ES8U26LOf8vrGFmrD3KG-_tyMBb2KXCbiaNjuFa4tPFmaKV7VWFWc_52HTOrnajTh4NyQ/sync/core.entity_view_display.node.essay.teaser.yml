@@ -1,0 +1,32 @@
+uuid: 98cc1b02-b757-427f-b78b-54fba5a00837
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.essay.body
+    - field.field.node.essay.field_argumentative
+    - node.type.essay
+  module:
+    - text
+    - user
+id: node.essay.teaser
+targetEntityType: node
+bundle: essay
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_argumentative: true

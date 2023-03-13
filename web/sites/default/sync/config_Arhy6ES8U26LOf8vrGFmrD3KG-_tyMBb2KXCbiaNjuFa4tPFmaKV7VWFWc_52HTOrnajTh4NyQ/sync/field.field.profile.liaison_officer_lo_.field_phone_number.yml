@@ -1,0 +1,23 @@
+uuid: 4441d140-27f0-4ad3-920e-bce017dad0b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_phone_number
+    - profile.type.liaison_officer_lo_
+id: profile.liaison_officer_lo_.field_phone_number
+field_name: field_phone_number
+entity_type: profile
+bundle: liaison_officer_lo_
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: '+975'
+  suffix: ''
+field_type: integer

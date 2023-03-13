@@ -1,0 +1,50 @@
+uuid: 363f37e4-dda2-403a-9b7f-e8650e0d3072
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.liaison_officer_lo_.field_did
+    - field.field.profile.liaison_officer_lo_.field_highest_qualification
+    - field.field.profile.liaison_officer_lo_.field_phone_number
+    - field.field.profile.liaison_officer_lo_.field_tenure
+    - profile.type.liaison_officer_lo_
+  module:
+    - text
+id: profile.liaison_officer_lo_.default
+targetEntityType: profile
+bundle: liaison_officer_lo_
+mode: default
+content:
+  field_did:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_highest_qualification:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_phone_number:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_tenure:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,24 @@
+uuid: 27616e05-c7d8-4455-9f84-95d7274d6980
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.home_slider.field_slider_image
+    - field.field.node.home_slider.field_slider_link
+    - node.type.home_slider
+  module:
+    - user
+id: node.home_slider.teaser
+targetEntityType: node
+bundle: home_slider
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_slider_image: true
+  field_slider_link: true

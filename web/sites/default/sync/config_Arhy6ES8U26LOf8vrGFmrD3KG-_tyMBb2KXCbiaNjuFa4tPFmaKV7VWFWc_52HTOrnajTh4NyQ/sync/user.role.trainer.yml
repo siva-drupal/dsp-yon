@@ -1,0 +1,15 @@
+uuid: 19851b5d-e517-4080-8ecb-46920f0086a3
+langcode: en
+status: true
+dependencies: {  }
+id: trainer
+label: Trainer
+weight: -5
+is_admin: null
+permissions:
+  - 'access profile overview'
+  - 'create trainers profile'
+  - 'delete own trainers profile'
+  - 'update own trainers profile'
+  - 'view own profile'
+  - 'view own trainers profile'
