@@ -1,0 +1,14 @@
+uuid: bed8c4c0-6500-437e-b753-f670a80d118a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.warden
+  module:
+    - user
+id: user_remove_role_action.warden
+label: 'Remove the Warden role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: warden

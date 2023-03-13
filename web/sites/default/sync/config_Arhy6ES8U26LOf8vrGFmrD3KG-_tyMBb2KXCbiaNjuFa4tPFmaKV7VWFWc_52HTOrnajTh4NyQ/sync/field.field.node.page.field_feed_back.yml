@@ -1,0 +1,32 @@
+uuid: e0e6f491-c6eb-4cc0-bb55-65774cc8b751
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_feed_back
+    - node.type.page
+    - webform.webform.webforms
+  module:
+    - webform
+id: node.page.field_feed_back
+field_name: field_feed_back
+entity_type: node
+bundle: page
+label: 'Submit your Feedback'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 47debb93-db96-4de1-a143-b5ab2fee96ce
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

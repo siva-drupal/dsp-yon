@@ -1,0 +1,24 @@
+uuid: 0d100c4d-9e10-4a13-813e-d431d9abfde3
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - profile
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: profile.field_military_department
+field_name: field_military_department
+entity_type: profile
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

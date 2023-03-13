@@ -1,0 +1,21 @@
+uuid: 13bdcb97-99a8-4d53-bfa0-37f7ae40ba6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_course_start_and_end_date1
+    - profile.type.trainers
+  module:
+    - datetime
+id: profile.trainers.field_course_start_and_end_date1
+field_name: field_course_start_and_end_date1
+entity_type: profile
+bundle: trainers
+label: 'Course Start and End date (Trainees)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

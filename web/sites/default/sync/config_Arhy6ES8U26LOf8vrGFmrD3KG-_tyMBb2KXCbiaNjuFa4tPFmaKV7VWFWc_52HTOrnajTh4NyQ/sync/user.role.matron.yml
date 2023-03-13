@@ -1,0 +1,14 @@
+uuid: 2fa20c2e-0ebd-4bcf-bce6-79ed5c67839e
+langcode: en
+status: true
+dependencies: {  }
+id: matron
+label: Matron
+weight: -2
+is_admin: null
+permissions:
+  - 'access profile overview'
+  - 'create matron profile'
+  - 'delete own matron profile'
+  - 'update own matron profile'
+  - 'view own matron profile'

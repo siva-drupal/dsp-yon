@@ -1,0 +1,21 @@
+uuid: 006209e5-ace6-458d-a404-884eb7e9ea17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_argumentative
+    - node.type.essay
+  module:
+    - options
+id: node.essay.field_argumentative
+field_name: field_argumentative
+entity_type: node
+bundle: essay
+label: argumentative
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,29 @@
+uuid: c5f00d6c-2ccb-4e71-86e5-45dfad8ef68d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_highest_qualification4
+    - profile.type.matron
+    - taxonomy.vocabulary.highest_qualification
+id: profile.matron.field_highest_qualification4
+field_name: field_highest_qualification4
+entity_type: profile
+bundle: matron
+label: 'Highest Qualification'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      highest_qualification: highest_qualification
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
