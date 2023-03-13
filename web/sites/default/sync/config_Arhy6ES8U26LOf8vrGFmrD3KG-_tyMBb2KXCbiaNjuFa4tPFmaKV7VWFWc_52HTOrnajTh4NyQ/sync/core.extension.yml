@@ -28,6 +28,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  fivestar: 0
   flexslider: 0
   flexslider_fields: 0
   flexslider_views: 0
@@ -52,6 +53,7 @@ module:
   registration_role: 0
   search: 0
   shortcut: 0
+  superfish: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -61,6 +63,7 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  votingapi: 0
   webform: 0
   webform_ui: 0
   pathauto: 1
