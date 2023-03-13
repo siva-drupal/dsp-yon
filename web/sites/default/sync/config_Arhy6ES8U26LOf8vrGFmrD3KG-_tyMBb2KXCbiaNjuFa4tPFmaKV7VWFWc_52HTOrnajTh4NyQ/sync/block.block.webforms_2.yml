@@ -1,0 +1,31 @@
+uuid: 5b0aceb7-17f4-493f-9422-3243d44299c8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c2ec6d1b-af9d-45a0-aa4c-6c7194e9a85e'
+  module:
+    - block_content
+    - system
+  theme:
+    - corporate_lite
+id: webforms_2
+theme: corporate_lite
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:c2ec6d1b-af9d-45a0-aa4c-6c7194e9a85e'
+settings:
+  id: 'block_content:c2ec6d1b-af9d-45a0-aa4c-6c7194e9a85e'
+  label: Webforms
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

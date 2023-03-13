@@ -1,0 +1,8 @@
+uuid: 485cdb0d-efd8-4263-bda1-fd9294c15e1c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Dinner Dishes'
+vid: dinn
+description: ''
+weight: 0

@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ *
+ * We use hook_theme to define the templates used.
+ */
+function highlight_block_theme($existing, $type, $theme, $path) {
+  return [
+    'basic_twig_block_custom' => [
+      'variables' => [
+        'text' => '',
+        
+        'myvariables' => array(),
+      ],
+    ],
+
+  ];
+}
+?>

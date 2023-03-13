@@ -1,0 +1,52 @@
+uuid: dd536769-5528-40bc-99f6-d5da11f75235
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.trainers.field_course1
+    - field.field.profile.trainers.field_course_start_and_end_date1
+    - field.field.profile.trainers.field_highest_qualification2
+    - field.field.profile.trainers.field_phone_number2
+    - profile.type.trainers
+  module:
+    - datetime
+id: profile.trainers.default
+targetEntityType: profile
+bundle: trainers
+mode: default
+content:
+  field_course1:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_course_start_and_end_date1:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_highest_qualification2:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_phone_number2:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  is_default: true

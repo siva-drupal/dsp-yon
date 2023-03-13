@@ -1,0 +1,13 @@
+uuid: afc2cdba-a1e3-48a8-b5fa-0d0ccf94be90
+langcode: en
+status: true
+dependencies: {  }
+id: warden
+label: Warden
+display_label: Warden
+multiple: false
+registration: false
+roles:
+  warden: warden
+allow_revisions: false
+new_revision: false

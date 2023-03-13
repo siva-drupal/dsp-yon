@@ -1,0 +1,20 @@
+uuid: 54c1dd0c-2a02-4c69-9f38-b6a7949c4e33
+langcode: en
+status: true
+dependencies:
+  module:
+    - highlight_block
+  theme:
+    - corporate_lite
+id: customguidetoblocksconfigurationform
+theme: corporate_lite
+region: featured
+weight: 0
+provider: null
+plugin: highlight_block_config_form
+settings:
+  id: highlight_block_config_form
+  label: 'Custom guide to blocks: configuration form'
+  provider: highlight_block
+  label_display: '0'
+visibility: {  }

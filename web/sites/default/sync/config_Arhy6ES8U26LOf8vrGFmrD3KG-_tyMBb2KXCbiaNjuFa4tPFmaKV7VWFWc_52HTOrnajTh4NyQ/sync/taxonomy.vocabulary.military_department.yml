@@ -1,0 +1,8 @@
+uuid: b76484c1-d721-421e-93a2-532c06bd1ec1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Military Department'
+vid: military_department
+description: ''
+weight: 0

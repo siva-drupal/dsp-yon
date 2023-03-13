@@ -1,0 +1,30 @@
+uuid: f6b8a529-9dbf-4c28-981b-ebb3ac7aad55
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.yonphula_dsp_mess_menu.field_breakfast
+    - field.field.node.yonphula_dsp_mess_menu.field_date
+    - field.field.node.yonphula_dsp_mess_menu.field_dinner
+    - field.field.node.yonphula_dsp_mess_menu.field_lunch
+    - field.field.node.yonphula_dsp_mess_menu.field_rating
+    - node.type.yonphula_dsp_mess_menu
+  module:
+    - user
+id: node.yonphula_dsp_mess_menu.teaser
+targetEntityType: node
+bundle: yonphula_dsp_mess_menu
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_breakfast: true
+  field_date: true
+  field_dinner: true
+  field_lunch: true
+  field_rating: true
