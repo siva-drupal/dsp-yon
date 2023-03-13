@@ -1,0 +1,14 @@
+uuid: a2f60570-6bf1-403d-a7ec-6aba5d750dad
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.officer_in_charge_oic_
+  module:
+    - user
+id: user_add_role_action.officer_in_charge_oic_
+label: 'Add the Officer IN charge (OIC) role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: officer_in_charge_oic_

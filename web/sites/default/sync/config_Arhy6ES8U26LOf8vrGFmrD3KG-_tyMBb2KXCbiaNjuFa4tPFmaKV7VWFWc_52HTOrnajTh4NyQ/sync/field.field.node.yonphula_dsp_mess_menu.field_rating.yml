@@ -1,0 +1,32 @@
+uuid: 628b8d68-72c2-4b06-9135-c45074ca1ef0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rating
+    - node.type.yonphula_dsp_mess_menu
+  module:
+    - fivestar
+id: node.yonphula_dsp_mess_menu.field_rating
+field_name: field_rating
+entity_type: node
+bundle: yonphula_dsp_mess_menu
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    rating: 100
+    target: null
+default_value_callback: ''
+settings:
+  stars: 5
+  allow_clear: false
+  allow_revote: true
+  allow_ownvote: true
+  rated_while: viewing
+  enable_voting_target: false
+  target_bridge_field: ''
+  target_fivestar_field: ''
+field_type: fivestar

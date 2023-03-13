@@ -1,0 +1,21 @@
+uuid: be038196-bbf6-46d3-ab2c-56628fd1f485
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blockicon
+    - node.type.blog
+  module:
+    - fontawesome
+id: node.blog.field_blockicon
+field_name: field_blockicon
+entity_type: node
+bundle: blog
+label: Blockicon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

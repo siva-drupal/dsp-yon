@@ -1,0 +1,23 @@
+uuid: b2d5bdab-551e-44bc-b66c-29f84f04188c
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+id: pathauto
+label: pathauto
+type: 'canonical_entities:node'
+pattern: 'events/[node:title]'
+selection_criteria:
+  0db3ba7c-87ff-45d0-83c4-bf5f029a29c0:
+    id: 'entity_bundle:node'
+    bundles:
+      events: events
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 0db3ba7c-87ff-45d0-83c4-bf5f029a29c0
+selection_logic: and
+weight: -5
+relationships: {  }

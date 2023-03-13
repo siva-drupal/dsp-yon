@@ -1,0 +1,21 @@
+uuid: ffaa7158-cd5a-408a-9a8c-de43cc2742f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.yonphula_dsp_mess_menu
+  module:
+    - datetime
+id: node.yonphula_dsp_mess_menu.field_date
+field_name: field_date
+entity_type: node
+bundle: yonphula_dsp_mess_menu
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

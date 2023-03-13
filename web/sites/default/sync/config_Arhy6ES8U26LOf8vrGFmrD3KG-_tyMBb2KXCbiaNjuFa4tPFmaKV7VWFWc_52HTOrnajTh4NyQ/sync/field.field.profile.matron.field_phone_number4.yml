@@ -1,0 +1,23 @@
+uuid: aefc146e-9c36-4f9a-ba1b-e3654facd0fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_phone_number4
+    - profile.type.matron
+id: profile.matron.field_phone_number4
+field_name: field_phone_number4
+entity_type: profile
+bundle: matron
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: '+975'
+  suffix: ''
+field_type: integer

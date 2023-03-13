@@ -1,0 +1,29 @@
+uuid: dea183ef-57f2-4b58-b07f-fb9ef2357b0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dinner
+    - node.type.yonphula_dsp_mess_menu
+    - taxonomy.vocabulary.dinn
+id: node.yonphula_dsp_mess_menu.field_dinner
+field_name: field_dinner
+entity_type: node
+bundle: yonphula_dsp_mess_menu
+label: Dinner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dinn: dinn
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

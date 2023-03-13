@@ -1,0 +1,139 @@
+uuid: 207cda2e-add5-4a37-b3bd-915f6e3d7004
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.yonphula_dsp_mess_menu.field_breakfast
+    - field.field.node.yonphula_dsp_mess_menu.field_date
+    - field.field.node.yonphula_dsp_mess_menu.field_dinner
+    - field.field.node.yonphula_dsp_mess_menu.field_lunch
+    - field.field.node.yonphula_dsp_mess_menu.field_rating
+    - node.type.yonphula_dsp_mess_menu
+  module:
+    - autocomplete_deluxe
+    - datetime
+    - fivestar
+    - path
+id: node.yonphula_dsp_mess_menu.default
+targetEntityType: node
+bundle: yonphula_dsp_mess_menu
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_breakfast:
+    weight: 9
+    settings:
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      not_found_message_allow: false
+      match_operator: CONTAINS
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
+      size: 60
+      selection_handler: default
+    third_party_settings: {  }
+    type: autocomplete_deluxe
+    region: content
+  field_date:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_dinner:
+    weight: 11
+    settings:
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      not_found_message_allow: false
+      match_operator: CONTAINS
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
+      size: 60
+      selection_handler: default
+    third_party_settings: {  }
+    type: autocomplete_deluxe
+    region: content
+  field_lunch:
+    weight: 10
+    settings:
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      not_found_message_allow: false
+      match_operator: CONTAINS
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
+      size: 60
+      selection_handler: default
+    third_party_settings: {  }
+    type: autocomplete_deluxe
+    region: content
+  field_rating:
+    weight: 26
+    settings:
+      display_format: average
+      text_format: none
+      fivestar_widget: basic
+    third_party_settings: {  }
+    type: fivestar_stars
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

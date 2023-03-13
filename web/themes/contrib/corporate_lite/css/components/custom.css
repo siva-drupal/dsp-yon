@@ -1,0 +1,40 @@
+/**** task-190-Courses css changes *****/
+
+.activecour, .deactivecour, .upcomingcour {
+    color: white;
+    font-weight: bold;
+}
+
+.activecour:hover, .deactivecour:hover, .upcomingcour:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.activecour a:hover, .deactivecour a:hover, .upcomingcour a:hover {
+    color: white;
+}
+
+.view-courses .js-form-item .form-select{
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+.js-form-item #edit-field-course-value{
+    font-size: 15px;
+}
+
+.js-form-item-field-course-status-value.form-item-field-course-status-value {
+    margin-right: 20px;
+}
+
+.view-courses #edit-actions .button{
+    font-size: 15px;
+}
+
+.view-courses table, td, th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 2px solid white;
+  }
+
+/**** End of task-190-Courses css changes *****/

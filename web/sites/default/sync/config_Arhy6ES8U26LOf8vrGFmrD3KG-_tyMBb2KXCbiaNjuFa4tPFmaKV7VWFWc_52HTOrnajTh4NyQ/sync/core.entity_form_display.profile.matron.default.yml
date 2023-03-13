@@ -1,0 +1,63 @@
+uuid: 50931026-af3c-4700-92d4-a6ec8d571019
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.matron.field_highest_qualification4
+    - field.field.profile.matron.field_military_department2
+    - field.field.profile.matron.field_phone_number4
+    - field.field.profile.matron.field_rank2
+    - field.field.profile.matron.field_tenure3
+    - profile.type.matron
+id: profile.matron.default
+targetEntityType: profile
+bundle: matron
+mode: default
+content:
+  field_highest_qualification4:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_military_department2:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_phone_number4:
+    weight: 0
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_rank2:
+    weight: 28
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_tenure3:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  is_default: true
