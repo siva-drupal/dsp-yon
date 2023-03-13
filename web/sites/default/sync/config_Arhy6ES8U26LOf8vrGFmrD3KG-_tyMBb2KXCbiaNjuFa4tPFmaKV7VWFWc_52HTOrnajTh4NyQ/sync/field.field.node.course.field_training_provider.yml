@@ -1,0 +1,28 @@
+uuid: ece5e2cb-9bbc-4807-abcd-8f30baf5da32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_training_provider
+    - node.type.course
+id: node.course.field_training_provider
+field_name: field_training_provider
+entity_type: node
+bundle: course
+label: 'Training Provider'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

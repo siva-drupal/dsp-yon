@@ -31,6 +31,7 @@ global-styling:
       css/base/layout.css: { weight: 100 }
       css/base/typography.css: {}
     component:
+      css/components/custom.css: {}
       css/components/alert.css: {}
       css/components/accordion.css: {}
       css/components/block.css: {}
