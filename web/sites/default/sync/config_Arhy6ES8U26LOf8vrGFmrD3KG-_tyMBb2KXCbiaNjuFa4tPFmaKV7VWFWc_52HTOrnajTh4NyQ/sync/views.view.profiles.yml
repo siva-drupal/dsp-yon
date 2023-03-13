@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - eva
     - profile
 _core:
   default_config_hash: iDeLvK90ucO3Qc2NIH8ot0W1saUd7U_XThA3P1QvuMs
@@ -339,7 +340,38 @@ display:
       contexts:
         - 'languages:language_interface'
         - url
-      tags: {  }
+      tags:
+        - 'config:core.entity_view_display.profile.liaison_officer_lo_.default'
+        - 'config:core.entity_view_display.profile.matron.default'
+        - 'config:core.entity_view_display.profile.officer_in_charge_oic_.default'
+        - 'config:core.entity_view_display.profile.trainees.default'
+        - 'config:core.entity_view_display.profile.trainers.default'
+        - 'config:core.entity_view_display.profile.warden.default'
+  entity_view_1:
+    display_plugin: entity_view
+    id: entity_view_1
+    display_title: EVA
+    position: 2
+    display_options:
+      display_extenders: {  }
+      entity_type: user
+      bundles:
+        - user
+      title: Profile
+      argument_mode: token
+      default_argument: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+      tags:
+        - 'config:core.entity_view_display.profile.liaison_officer_lo_.default'
+        - 'config:core.entity_view_display.profile.matron.default'
+        - 'config:core.entity_view_display.profile.officer_in_charge_oic_.default'
+        - 'config:core.entity_view_display.profile.trainees.default'
+        - 'config:core.entity_view_display.profile.trainers.default'
+        - 'config:core.entity_view_display.profile.warden.default'
   user_page:
     display_plugin: embed
     id: user_page
@@ -353,4 +385,10 @@ display:
       contexts:
         - 'languages:language_interface'
         - url
-      tags: {  }
+      tags:
+        - 'config:core.entity_view_display.profile.liaison_officer_lo_.default'
+        - 'config:core.entity_view_display.profile.matron.default'
+        - 'config:core.entity_view_display.profile.officer_in_charge_oic_.default'
+        - 'config:core.entity_view_display.profile.trainees.default'
+        - 'config:core.entity_view_display.profile.trainers.default'
+        - 'config:core.entity_view_display.profile.warden.default'

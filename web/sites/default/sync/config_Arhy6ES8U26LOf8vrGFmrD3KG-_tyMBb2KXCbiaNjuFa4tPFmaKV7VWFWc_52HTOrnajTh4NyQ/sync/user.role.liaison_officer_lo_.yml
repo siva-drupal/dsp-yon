@@ -11,4 +11,5 @@ permissions:
   - 'create liaison_officer_lo_ profile'
   - 'delete own liaison_officer_lo_ profile'
   - 'update own liaison_officer_lo_ profile'
+  - 'view any profile'
   - 'view own liaison_officer_lo_ profile'

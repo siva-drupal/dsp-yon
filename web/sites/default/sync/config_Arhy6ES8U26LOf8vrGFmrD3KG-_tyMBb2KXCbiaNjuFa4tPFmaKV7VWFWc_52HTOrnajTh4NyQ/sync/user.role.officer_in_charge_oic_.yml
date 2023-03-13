@@ -11,4 +11,5 @@ permissions:
   - 'create officer_in_charge_oic_ profile'
   - 'delete own officer_in_charge_oic_ profile'
   - 'update own officer_in_charge_oic_ profile'
+  - 'view any profile'
   - 'view own officer_in_charge_oic_ profile'

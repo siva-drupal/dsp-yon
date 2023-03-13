@@ -11,4 +11,5 @@ permissions:
   - 'create warden profile'
   - 'delete own warden profile'
   - 'update own warden profile'
+  - 'view any profile'
   - 'view own warden profile'

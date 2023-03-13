@@ -11,4 +11,5 @@ permissions:
   - 'create trainees profile'
   - 'delete own trainees profile'
   - 'update own trainees profile'
+  - 'view any profile'
   - 'view own trainees profile'

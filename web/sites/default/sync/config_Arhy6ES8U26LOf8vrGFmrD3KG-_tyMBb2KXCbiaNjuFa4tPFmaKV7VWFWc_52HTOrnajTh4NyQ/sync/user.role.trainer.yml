@@ -11,5 +11,6 @@ permissions:
   - 'create trainers profile'
   - 'delete own trainers profile'
   - 'update own trainers profile'
+  - 'view any profile'
   - 'view own profile'
   - 'view own trainers profile'
