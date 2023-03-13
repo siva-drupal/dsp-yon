@@ -51,6 +51,7 @@ module:
   registration_role: 0
   search: 0
   shortcut: 0
+  superfish: 0
   system: 0
   taxonomy: 0
   text: 0
