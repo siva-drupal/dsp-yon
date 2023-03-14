@@ -1,0 +1,14 @@
+uuid: c45b1343-ad5e-459a-bdfb-c1d8ea708c74
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.assistant_trainer
+  module:
+    - user
+id: user_remove_role_action.assistant_trainer
+label: 'Remove the Assistant Trainer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: assistant_trainer

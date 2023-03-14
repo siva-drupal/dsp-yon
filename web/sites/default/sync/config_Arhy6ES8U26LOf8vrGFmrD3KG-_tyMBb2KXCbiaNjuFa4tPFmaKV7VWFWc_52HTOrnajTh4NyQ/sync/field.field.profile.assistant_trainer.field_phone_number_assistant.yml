@@ -1,0 +1,23 @@
+uuid: 83e75d15-f7bf-4123-b058-ceb2ad007a8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_phone_number_assistant
+    - profile.type.assistant_trainer
+id: profile.assistant_trainer.field_phone_number_assistant
+field_name: field_phone_number_assistant
+entity_type: profile
+bundle: assistant_trainer
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

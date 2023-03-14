@@ -1,60 +1,60 @@
-uuid: 39223546-669f-46aa-ada0-e40bbfa4243a
+uuid: 72c703ce-4832-4d30-b3c7-933eae92dbd2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.profile.liaison_officer_lo_.field_did
-    - field.field.profile.liaison_officer_lo_.field_highest_qualification
-    - field.field.profile.liaison_officer_lo_.field_phone_number
-    - field.field.profile.liaison_officer_lo_.field_tenure
-    - profile.type.liaison_officer_lo_
+    - field.field.profile.store_in_charge.field_did_store
+    - field.field.profile.store_in_charge.field_highest_qualification_stor
+    - field.field.profile.store_in_charge.field_p_number_store
+    - field.field.profile.store_in_charge.field_tenure_store
+    - profile.type.store_in_charge
   module:
     - autocomplete_deluxe
     - text
-id: profile.liaison_officer_lo_.default
+id: profile.store_in_charge.default
 targetEntityType: profile
-bundle: liaison_officer_lo_
+bundle: store_in_charge
 mode: default
 content:
-  field_did:
-    weight: 0
+  field_did_store:
+    weight: 26
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield
     region: content
-  field_highest_qualification:
-    weight: 26
+  field_highest_qualification_stor:
+    weight: 27
     settings:
+      match_operator: CONTAINS
+      size: 60
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
+      selection_handler: default
       limit: 10
       min_length: 0
       delimiter: ''
-      not_found_message: 'The term ''@term'' will be added'
-      new_terms: true
-      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
       not_found_message_allow: false
-      match_operator: CONTAINS
-      autocomplete_route_name: autocomplete_deluxe.autocomplete
-      size: 60
-      selection_handler: default
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: false
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
     third_party_settings: {  }
     type: autocomplete_deluxe
     region: content
-  field_phone_number:
-    weight: 1
+  field_p_number_store:
+    weight: 28
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
-  field_tenure:
-    weight: 2
+  field_tenure_store:
+    weight: 29
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: text_textfield
     region: content
 hidden:
   is_default: true

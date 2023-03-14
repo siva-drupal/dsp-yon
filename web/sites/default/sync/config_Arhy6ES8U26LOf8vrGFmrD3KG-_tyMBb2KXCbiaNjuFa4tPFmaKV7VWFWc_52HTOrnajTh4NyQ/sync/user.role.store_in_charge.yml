@@ -1,0 +1,25 @@
+uuid: 9db72edf-f6e2-48ac-aabc-12b44dc475a7
+langcode: en
+status: true
+dependencies: {  }
+id: store_in_charge
+label: 'Store In charge'
+weight: -1
+is_admin: null
+permissions:
+  - 'create field_did_store'
+  - 'create field_highest_qualification_stor'
+  - 'create field_p_number_store'
+  - 'create field_tenure_store'
+  - 'create store_in_charge profile'
+  - 'delete own store_in_charge profile'
+  - 'edit own field_did_store'
+  - 'edit own field_highest_qualification_stor'
+  - 'edit own field_p_number_store'
+  - 'edit own field_tenure_store'
+  - 'update own store_in_charge profile'
+  - 'view own field_did_store'
+  - 'view own field_highest_qualification_stor'
+  - 'view own field_p_number_store'
+  - 'view own field_tenure_store'
+  - 'view own store_in_charge profile'

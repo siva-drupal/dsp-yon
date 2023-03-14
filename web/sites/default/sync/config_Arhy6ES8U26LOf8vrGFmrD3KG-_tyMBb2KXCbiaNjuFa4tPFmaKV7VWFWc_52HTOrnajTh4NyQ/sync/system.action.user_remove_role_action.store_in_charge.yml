@@ -1,0 +1,14 @@
+uuid: e4aded3e-603e-4200-9a9a-c323dfb7ebb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.store_in_charge
+  module:
+    - user
+id: user_remove_role_action.store_in_charge
+label: 'Remove the Store In charge role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: store_in_charge

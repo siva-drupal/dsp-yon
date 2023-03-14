@@ -20,7 +20,7 @@ settings:
       label: 'Liasion Officer (LO)'
     -
       value: !!float 2
-      label: 'Officer Incharge (OIC)'
+      label: 'Officer In charge (OIC)'
     -
       value: !!float 3
       label: Trainees
@@ -33,6 +33,12 @@ settings:
     -
       value: !!float 6
       label: Matron
+    -
+      value: !!float 7
+      label: 'Store In Charge'
+    -
+      value: !!float 8
+      label: 'Assistant Trainer'
   allowed_values_function: ''
 module: options
 locked: false

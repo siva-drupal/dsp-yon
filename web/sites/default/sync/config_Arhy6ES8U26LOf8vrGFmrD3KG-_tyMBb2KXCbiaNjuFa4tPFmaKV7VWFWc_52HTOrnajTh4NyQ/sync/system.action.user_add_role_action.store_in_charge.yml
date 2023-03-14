@@ -1,0 +1,14 @@
+uuid: 07701630-979c-44e5-ac36-bc0b7d137b6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.store_in_charge
+  module:
+    - user
+id: user_add_role_action.store_in_charge
+label: 'Add the Store In charge role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: store_in_charge

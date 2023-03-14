@@ -1,0 +1,14 @@
+uuid: 05b6da90-241b-4c8d-9aef-c711dbf0a21e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.assistant_trainer
+  module:
+    - user
+id: user_add_role_action.assistant_trainer
+label: 'Add the Assistant Trainer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: assistant_trainer

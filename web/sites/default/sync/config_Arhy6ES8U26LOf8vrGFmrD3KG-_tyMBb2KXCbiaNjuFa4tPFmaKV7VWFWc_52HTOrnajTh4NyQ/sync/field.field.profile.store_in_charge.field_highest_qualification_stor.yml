@@ -1,0 +1,29 @@
+uuid: 93be1912-e8e9-4872-9e82-8b0a350b7dbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_highest_qualification_stor
+    - profile.type.store_in_charge
+    - taxonomy.vocabulary.highest_qualification
+id: profile.store_in_charge.field_highest_qualification_stor
+field_name: field_highest_qualification_stor
+entity_type: profile
+bundle: store_in_charge
+label: 'Highest Qualification'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      highest_qualification: highest_qualification
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

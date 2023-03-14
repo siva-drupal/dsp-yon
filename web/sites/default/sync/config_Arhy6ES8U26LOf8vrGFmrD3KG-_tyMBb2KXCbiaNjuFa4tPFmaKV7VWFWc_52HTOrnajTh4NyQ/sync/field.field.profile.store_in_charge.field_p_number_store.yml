@@ -1,0 +1,23 @@
+uuid: ade828f2-e6f2-48ac-b7dd-19059fadd23f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_p_number_store
+    - profile.type.store_in_charge
+id: profile.store_in_charge.field_p_number_store
+field_name: field_p_number_store
+entity_type: profile
+bundle: store_in_charge
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

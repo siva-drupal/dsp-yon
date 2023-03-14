@@ -1,23 +1,29 @@
-uuid: 50931026-af3c-4700-92d4-a6ec8d571019
+uuid: 83cdcf42-d75d-467c-a470-f1e01094adf5
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.profile.matron.field_highest_qualification4
-    - field.field.profile.matron.field_military_department2
-    - field.field.profile.matron.field_phone_number4
-    - field.field.profile.matron.field_rank2
-    - field.field.profile.matron.field_tenure3
-    - profile.type.matron
+    - field.field.profile.assistant_trainer.field_assistant_trainer
+    - field.field.profile.assistant_trainer.field_courseass_trainer
+    - field.field.profile.assistant_trainer.field_hi
+    - field.field.profile.assistant_trainer.field_phone_number_assistant
+    - profile.type.assistant_trainer
   module:
     - autocomplete_deluxe
-id: profile.matron.default
+    - datetime
+id: profile.assistant_trainer.default
 targetEntityType: profile
-bundle: matron
+bundle: assistant_trainer
 mode: default
 content:
-  field_highest_qualification4:
-    weight: 26
+  field_assistant_trainer:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_courseass_trainer:
+    weight: 1
     settings:
       limit: 10
       min_length: 0
@@ -33,8 +39,8 @@ content:
     third_party_settings: {  }
     type: autocomplete_deluxe
     region: content
-  field_military_department2:
-    weight: 27
+  field_hi:
+    weight: 3
     settings:
       limit: 10
       min_length: 0
@@ -50,37 +56,12 @@ content:
     third_party_settings: {  }
     type: autocomplete_deluxe
     region: content
-  field_phone_number4:
+  field_phone_number_assistant:
     weight: 0
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
-    region: content
-  field_rank2:
-    weight: 28
-    settings:
-      limit: 10
-      min_length: 0
-      delimiter: ''
-      not_found_message: 'The term ''@term'' will be added'
-      new_terms: true
-      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
-      not_found_message_allow: false
-      match_operator: CONTAINS
-      autocomplete_route_name: autocomplete_deluxe.autocomplete
-      size: 60
-      selection_handler: default
-    third_party_settings: {  }
-    type: autocomplete_deluxe
-    region: content
-  field_tenure3:
-    weight: 4
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
 hidden:
   is_default: true

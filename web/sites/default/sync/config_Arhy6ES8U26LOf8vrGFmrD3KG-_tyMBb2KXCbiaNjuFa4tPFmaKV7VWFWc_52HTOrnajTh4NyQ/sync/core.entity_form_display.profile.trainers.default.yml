@@ -9,6 +9,7 @@ dependencies:
     - field.field.profile.trainers.field_phone_number2
     - profile.type.trainers
   module:
+    - autocomplete_deluxe
     - datetime
 id: profile.trainers.default
 targetEntityType: profile
@@ -18,12 +19,19 @@ content:
   field_course1:
     weight: 26
     settings:
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      not_found_message_allow: false
       match_operator: CONTAINS
-      match_limit: 10
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
-      placeholder: ''
+      selection_handler: default
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: autocomplete_deluxe
     region: content
   field_course_start_and_end_date1:
     weight: 3
@@ -34,12 +42,19 @@ content:
   field_highest_qualification2:
     weight: 27
     settings:
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      not_found_message_allow: false
       match_operator: CONTAINS
-      match_limit: 10
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
-      placeholder: ''
+      selection_handler: default
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: autocomplete_deluxe
     region: content
   field_phone_number2:
     weight: 1

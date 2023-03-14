@@ -1,0 +1,22 @@
+uuid: 7275547b-53d6-46ae-bc7f-b31b21c1359d
+langcode: en
+status: true
+dependencies: {  }
+id: assistant_trainer
+label: 'Assistant Trainer'
+weight: 0
+is_admin: null
+permissions:
+  - 'create assistant_trainer profile'
+  - 'create field_assistant_trainer'
+  - 'create field_hi'
+  - 'create field_phone_number_assistant'
+  - 'delete own assistant_trainer profile'
+  - 'edit own field_assistant_trainer'
+  - 'edit own field_hi'
+  - 'edit own field_phone_number_assistant'
+  - 'update own assistant_trainer profile'
+  - 'view own assistant_trainer profile'
+  - 'view own field_assistant_trainer'
+  - 'view own field_hi'
+  - 'view own field_phone_number_assistant'

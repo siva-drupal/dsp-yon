@@ -1,0 +1,13 @@
+uuid: 7f652928-885b-4d5c-89a3-8e8f293552a1
+langcode: en
+status: true
+dependencies: {  }
+id: assistant_trainer
+label: 'Assistant Trainer'
+display_label: 'Assistant Trainer'
+multiple: false
+registration: false
+roles:
+  assistant_trainer: assistant_trainer
+allow_revisions: false
+new_revision: false

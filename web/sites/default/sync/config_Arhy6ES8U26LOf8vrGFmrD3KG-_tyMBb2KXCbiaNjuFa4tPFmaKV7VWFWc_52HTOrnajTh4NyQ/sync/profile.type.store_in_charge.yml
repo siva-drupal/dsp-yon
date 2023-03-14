@@ -1,0 +1,13 @@
+uuid: a5c86f3f-ce7a-4e23-a1f9-a966c793dd39
+langcode: en
+status: true
+dependencies: {  }
+id: store_in_charge
+label: 'Store In charge'
+display_label: 'Store In charge'
+multiple: false
+registration: false
+roles:
+  store_in_charge: store_in_charge
+allow_revisions: false
+new_revision: false

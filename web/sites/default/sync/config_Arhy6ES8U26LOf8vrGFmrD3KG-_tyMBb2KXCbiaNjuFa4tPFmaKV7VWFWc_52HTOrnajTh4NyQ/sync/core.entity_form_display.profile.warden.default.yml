@@ -9,30 +9,46 @@ dependencies:
     - field.field.profile.warden.field_rank1
     - field.field.profile.warden.field_tenure2
     - profile.type.warden
+  module:
+    - autocomplete_deluxe
 id: profile.warden.default
 targetEntityType: profile
 bundle: warden
 mode: default
 content:
   field_highest_qualification3:
-    weight: 26
+    weight: 4
     settings:
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      not_found_message_allow: false
       match_operator: CONTAINS
-      match_limit: 10
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
-      placeholder: ''
+      selection_handler: default
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: autocomplete_deluxe
     region: content
   field_military_department:
-    weight: 27
+    weight: 1
     settings:
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      not_found_message_allow: false
       match_operator: CONTAINS
-      match_limit: 10
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
-      placeholder: ''
+      selection_handler: default
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: autocomplete_deluxe
     region: content
   field_phone_number3:
     weight: 0
@@ -43,17 +59,24 @@ content:
     type: string_textfield
     region: content
   field_rank1:
-    weight: 28
+    weight: 2
     settings:
+      limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      not_found_message_allow: false
       match_operator: CONTAINS
-      match_limit: 10
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
-      placeholder: ''
+      selection_handler: default
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: autocomplete_deluxe
     region: content
   field_tenure2:
-    weight: 4
+    weight: 3
     settings:
       size: 60
       placeholder: ''
