@@ -86,13 +86,8 @@ ul.menu li.menu-item--expanded > a:hover:before {
 /*Main navigation*/
 .header-container ul.menu {
   margin: 0;
-  /* padding-bottom: 80px; */
   list-style: none;
   text-align: right;
-  display: flex;
-  align-items: center;
-  margin-top: 115px;
-  margin-left: -260px;
 }
 .header__section ul.menu {
   padding: 5px 0;
@@ -873,6 +868,8 @@ ul.menu.sf-menu.sf-accordion li.sf-expanded > a.sf-accordion-button:after {
   border-bottom-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
 }
-.view-frontpage h1{
-  text-align: center;
+
+div.sf-accordion-toggle.sf-style-default a {
+color: #0f0f0f;
+background-color: #ffffff;
 }

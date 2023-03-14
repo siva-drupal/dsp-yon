@@ -1,0 +1,29 @@
+uuid: 7c1e79df-4d2d-4736-96b8-0f7b828f6da3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_breakfast
+    - node.type.yonphula_dsp_mess_menu
+    - taxonomy.vocabulary.breakfast_
+id: node.yonphula_dsp_mess_menu.field_breakfast
+field_name: field_breakfast
+entity_type: node
+bundle: yonphula_dsp_mess_menu
+label: Breakfast
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      breakfast_: breakfast_
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

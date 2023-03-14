@@ -1,0 +1,29 @@
+uuid: e88ed0ac-e0f7-403a-8f61-bd751e849c23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lunch
+    - node.type.yonphula_dsp_mess_menu
+    - taxonomy.vocabulary.lunch_dishes
+id: node.yonphula_dsp_mess_menu.field_lunch
+field_name: field_lunch
+entity_type: node
+bundle: yonphula_dsp_mess_menu
+label: Lunch
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      lunch_dishes: lunch_dishes
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

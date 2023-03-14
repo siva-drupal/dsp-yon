@@ -1,0 +1,106 @@
+{# {% for key, value in myvariables  %}
+  <p class = "label-block">{{ key }}</p>  
+  <p class = "value"> {{ value }}</p></br>
+  {% if key == 'Name:' %}
+  {% set total = value %}
+     
+  {% endif %}
+    {% if key == 'Image:' %}
+  {% set total = value %}
+     
+  {% endif %}
+  
+
+{% endfor %} #}
+
+<div class="background-image-block__section field--mt-background-image-block">
+            <div class="background-image background-image--attachment-scroll" style=""></div>
+            
+            <div class="background-image-overlay region--light-typography region--black-background" style="opacity: 90;"></div>
+            
+            <div class="container region--light-typography region--black-background block">
+            <h2 class="title"><b>Active Trainees</b></h2>
+            
+            <div class="highlights">
+            <p class="text-center bottom-spacing-medium">"As Desuups you will not be known by your name, you will be known by your skills instead."</p>
+            
+            <div class="row">
+
+            {# <div class="col-md-3 col-sm-6">
+            <div class="highlight">
+            <div class="highlight-head">10</div>
+            
+            <div class="highlight-body">Total<br />
+            Course</div>
+            </div>
+            </div> #}
+
+            {% for key, value in myvariables  %}
+            
+            {% if key == 'Name:' %}
+
+            <div class="col-md-4 col-sm-5">
+            <div class="highlight">
+            <div class="highlight-head" style="color:lightgreen"><b>{{ value }}</b></div>
+            
+            <div class="highlight-body" style="color:orange"><b>Total<br />
+            Trainees</b></div>
+            </div>
+            </div>
+              {% endif %}
+                {% if key == 'Male:' %}
+             <div class="col-md-4 col-sm-5">
+            <div class="highlight">
+            <div class="highlight-head" style="color:blue;"><b>{{ value }}</b></div>
+            <div class="highlight-body" style="color:orange"><b>Male<br />
+            Trainees</b></div>
+            </div>
+            </div>
+             {% endif %}
+               {% if key == 'Female:' %}
+             <div class="col-md-4 col-sm-5">
+            <div class="highlight">
+            <div class="highlight-head"  style="color:magenta;"><b>{{ value }}</b></div>
+            <div class="highlight-body" style="color:orange;"><b>Female<br />
+            Trainees</b></div>
+            </div>
+            </div>
+             {% endif %}
+                 {% endfor %}
+
+              
+
+             {# {% for key, value in myvariables  %} #}
+           
+                {# {% endfor %} #}
+                
+              
+               
+             
+            
+       
+
+
+
+                 
+
+               {# {% for key, value in myvariables  %}
+                  {% if key == 'Email:' %} #}
+            
+                 {# <div class="col-md-3 col-sm-6">
+            <div class="highlight">
+            <div class="highlight-head">{{ value }}</div>
+            <div class="highlight-body">Female<br />
+            Trainees</div>
+            </div>
+            </div> #}
+               {# {% endif %} #}
+                 {# {% endfor %} #}
+        
+            
+            
+            
+            </div>
+            </div>
+            </div>
+            </div>

@@ -1,0 +1,6 @@
+name: Highlight Block
+description: This is our block
+type: module
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:block
