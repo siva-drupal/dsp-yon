@@ -16,7 +16,7 @@ provider: null
 plugin: 'block_content:0966bcab-70b5-49ac-a5fc-80655af297c1'
 settings:
   id: 'block_content:0966bcab-70b5-49ac-a5fc-80655af297c1'
-  label: 'Contact info'
+  label: 'Contact Info (Header Top) '
   provider: block_content
   label_display: '0'
   status: true
