@@ -1,6 +1,6 @@
-uuid: f8bbfe26-d080-4e02-a540-c2e6d87a0297
+uuid: 6f7a9fa7-b7fd-4f07-9782-fd0d9b998154
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:0966bcab-70b5-49ac-a5fc-80655af297c1'
@@ -8,15 +8,15 @@ dependencies:
     - block_content
   theme:
     - corporate_lite
-id: contactinfo_2
+id: contactinfo_3
 theme: corporate_lite
 region: header_top_first
-weight: -12
+weight: 0
 provider: null
 plugin: 'block_content:0966bcab-70b5-49ac-a5fc-80655af297c1'
 settings:
   id: 'block_content:0966bcab-70b5-49ac-a5fc-80655af297c1'
-  label: 'Contact Info (Header Top) '
+  label: 'Contact info'
   provider: block_content
   label_display: '0'
   status: true
