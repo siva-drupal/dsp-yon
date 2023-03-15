@@ -7,7 +7,10 @@ label: 'Officer IN charge (OIC)'
 weight: -6
 is_admin: null
 permissions:
+  - 'access poll overview'
   - 'access profile overview'
+  - 'administer poll display'
+  - 'administer poll form display'
   - 'create officer_in_charge_oic_ profile'
   - 'delete own officer_in_charge_oic_ profile'
   - 'update own officer_in_charge_oic_ profile'

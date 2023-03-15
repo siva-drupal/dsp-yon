@@ -5,10 +5,14 @@ dependencies:
   config:
     - field.field.user.user.field_ch
     - field.field.user.user.field_gender
+    - field.field.user.user.field_image
     - field.field.user.user.field_last_name
     - field.field.user.user.field_name
     - field.field.user.user.field_training_center
+    - image.style.thumbnail
   module:
+    - image
+    - path
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -34,6 +38,14 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  field_image:
+    weight: 31
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_last_name:
     weight: 3
     settings:
@@ -56,12 +68,20 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  assistant_trainer_profiles: true
   contact: true
   language: true
   liaison_officer_lo__profiles: true
   matron_profiles: true
   officer_in_charge_oic__profiles: true
+  store_in_charge_profiles: true
   timezone: true
   trainees_profiles: true
   trainers_profiles: true

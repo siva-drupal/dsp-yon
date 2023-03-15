@@ -7,7 +7,10 @@ label: Matron
 weight: -2
 is_admin: null
 permissions:
+  - 'access poll overview'
   - 'access profile overview'
+  - 'administer poll display'
+  - 'administer poll form display'
   - 'create matron profile'
   - 'delete own matron profile'
   - 'update own matron profile'

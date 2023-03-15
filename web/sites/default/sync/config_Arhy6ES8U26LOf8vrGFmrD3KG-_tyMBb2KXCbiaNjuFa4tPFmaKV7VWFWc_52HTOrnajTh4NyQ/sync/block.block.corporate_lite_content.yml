@@ -11,7 +11,7 @@ _core:
 id: corporate_lite_content
 theme: corporate_lite
 region: content
-weight: -8
+weight: -9
 provider: null
 plugin: system_main_block
 settings:

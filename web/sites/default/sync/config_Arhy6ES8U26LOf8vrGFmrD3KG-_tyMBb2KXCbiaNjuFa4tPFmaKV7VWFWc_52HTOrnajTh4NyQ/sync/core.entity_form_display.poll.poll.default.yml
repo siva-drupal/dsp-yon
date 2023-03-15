@@ -1,0 +1,58 @@
+uuid: c4f0997a-af26-4b5c-84fa-2774bdb12093
+langcode: en
+status: true
+dependencies:
+  module:
+    - poll
+id: poll.poll.default
+targetEntityType: poll
+bundle: poll
+mode: default
+content:
+  choice:
+    type: poll_choice_default
+    settings: {  }
+    weight: 1
+    region: content
+    third_party_settings: {  }
+  question:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  result_vote_allow:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  runtime:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  anonymous_vote_allow: true
+  cancel_vote_allow: true

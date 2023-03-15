@@ -7,6 +7,9 @@ label: 'Assistant Trainer'
 weight: 0
 is_admin: null
 permissions:
+  - 'access poll overview'
+  - 'administer poll display'
+  - 'administer poll form display'
   - 'create assistant_trainer profile'
   - 'create field_assistant_trainer'
   - 'create field_hi'

@@ -5,10 +5,12 @@ dependencies:
   config:
     - field.field.user.user.field_ch
     - field.field.user.user.field_gender
+    - field.field.user.user.field_image
     - field.field.user.user.field_last_name
     - field.field.user.user.field_name
     - field.field.user.user.field_training_center
   module:
+    - image
     - options
     - user
 _core:
@@ -31,6 +33,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  field_image:
+    weight: 11
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   field_last_name:
     weight: 3
@@ -60,10 +71,17 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  profiles_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
+  assistant_trainer_profiles: true
   liaison_officer_lo__profiles: true
   matron_profiles: true
   officer_in_charge_oic__profiles: true
+  store_in_charge_profiles: true
   trainees_profiles: true
   trainers_profiles: true
   warden_profiles: true

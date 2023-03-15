@@ -12,7 +12,7 @@ dependencies:
 id: webform
 theme: corporate_lite
 region: content
-weight: -6
+weight: -5
 provider: null
 plugin: webform_block
 settings:

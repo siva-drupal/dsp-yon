@@ -1,0 +1,15 @@
+uuid: 19ff0785-6266-4c21-b22b-086a32bbd796
+langcode: en
+status: true
+dependencies: {  }
+name: carousel
+label: carousel
+effects:
+  22723a7b-7558-488b-8d37-dbc84115294d:
+    uuid: 22723a7b-7558-488b-8d37-dbc84115294d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200
+      anchor: center-center

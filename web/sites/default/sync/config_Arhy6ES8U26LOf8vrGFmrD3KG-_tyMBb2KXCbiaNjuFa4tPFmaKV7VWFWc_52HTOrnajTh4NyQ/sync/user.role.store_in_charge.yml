@@ -7,6 +7,9 @@ label: 'Store In charge'
 weight: -1
 is_admin: null
 permissions:
+  - 'access poll overview'
+  - 'administer poll display'
+  - 'administer poll form display'
   - 'create field_did_store'
   - 'create field_highest_qualification_stor'
   - 'create field_p_number_store'

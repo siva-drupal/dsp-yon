@@ -11,6 +11,8 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
+  - 'access poll overview'
+  - 'access polls'
   - 'access site-wide contact form'
   - 'access user profiles'
   - 'create field_ch'
@@ -66,3 +68,4 @@ permissions:
   - 'view own field_term'
   - 'view own field_terms'
   - 'view own field_terms_of_service'
+  - 'view poll results'

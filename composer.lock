@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b851f6592fb9907e8f3d9c2031c29098",
+    "content-hash": "eb8bc9cbd4390c37ec310264e3d8ea67",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3010,6 +3010,83 @@
             }
         },
         {
+            "name": "drupal/owlcarousel",
+            "version": "2.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/owl-carousel.git",
+                "reference": "8.x-2.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/owlcarousel-8.x-2.0-rc1.zip",
+                "reference": "8.x-2.0-rc1",
+                "shasum": "e51ea0ee79e122d79a32f10ce0b7db485006c597"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "suggest": {
+                "owlcarousel2/owlcarousel2": "The owlcarousel2 library is required to use the drupal/owlcarousel module."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0-rc1",
+                    "datestamp": "1655979821",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "aburrows",
+                    "homepage": "https://www.drupal.org/user/577844"
+                },
+                {
+                    "name": "Anybody",
+                    "homepage": "https://www.drupal.org/user/291091"
+                },
+                {
+                    "name": "Hebl",
+                    "homepage": "https://www.drupal.org/user/3688118"
+                },
+                {
+                    "name": "ipwa",
+                    "homepage": "https://www.drupal.org/user/130909"
+                },
+                {
+                    "name": "Sebastien M.",
+                    "homepage": "https://www.drupal.org/user/380104"
+                },
+                {
+                    "name": "swim",
+                    "homepage": "https://www.drupal.org/user/1968266"
+                },
+                {
+                    "name": "thomas.frobieter",
+                    "homepage": "https://www.drupal.org/user/409335"
+                }
+            ],
+            "description": "Drupal integration for Owl Carousel",
+            "homepage": "https://www.drupal.org/project/owlcarousel",
+            "support": {
+                "source": "https://git.drupalcode.org/project/owlcarousel",
+                "issues": "https://www.drupal.org/project/owlcarousel"
+            }
+        },
+        {
             "name": "drupal/pathauto",
             "version": "1.10.0",
             "source": {
@@ -3075,6 +3152,58 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
+            "name": "drupal/poll",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/poll.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/poll-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "59b4ec4545aa5901c5f3a177760b17b645c0617d"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1638777657",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "adammalone",
+                    "homepage": "https://www.drupal.org/user/1295980"
+                },
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "mqanneh",
+                    "homepage": "https://www.drupal.org/user/2833163"
+                }
+            ],
+            "description": "Allows your site to capture votes on different topics in the form of multiple choice questions.",
+            "homepage": "https://www.drupal.org/project/poll",
+            "support": {
+                "source": "https://git.drupalcode.org/project/poll"
             }
         },
         {
@@ -7813,7 +7942,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/conditional_fields": 15,
-        "drupal/fivestar": 15
+        "drupal/fivestar": 15,
+        "drupal/owlcarousel": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -7,7 +7,10 @@ label: Warden
 weight: -3
 is_admin: null
 permissions:
+  - 'access poll overview'
   - 'access profile overview'
+  - 'administer poll display'
+  - 'administer poll form display'
   - 'create warden profile'
   - 'delete own warden profile'
   - 'update own warden profile'

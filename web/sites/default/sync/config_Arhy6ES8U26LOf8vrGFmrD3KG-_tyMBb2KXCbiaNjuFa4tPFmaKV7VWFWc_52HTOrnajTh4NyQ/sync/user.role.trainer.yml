@@ -7,7 +7,10 @@ label: Trainer
 weight: -5
 is_admin: null
 permissions:
+  - 'access poll overview'
   - 'access profile overview'
+  - 'administer poll display'
+  - 'administer poll form display'
   - 'create trainers profile'
   - 'delete own trainers profile'
   - 'update own trainers profile'

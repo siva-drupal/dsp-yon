@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - highlight_block
+    - system
   theme:
     - corporate_lite
 id: customguidetoblocksconfigurationform
@@ -17,4 +18,9 @@ settings:
   label: 'Custom guide to blocks: configuration form'
   provider: highlight_block
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
