@@ -38,3 +38,47 @@
   }
 
 /**** End of task-190-Courses css changes *****/
+
+/* Design task by two Kota Phorab */
+    /* logo size */
+    .logo,
+    a.slider_brandnig{
+    width: 20rem;
+    }
+
+
+    /* flexsilder */
+    .flexslider .slides img{
+        height:500px;
+    }
+
+    /* Sticky Navbar */
+    .header-container{
+        list-style-type:none;
+        overflow: hidden;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    /* Navbar aligned with logo */
+    .header__container .row {
+        display: flex;
+        align-items: center;
+    }
+
+    /* icon position */
+    .to-top {
+        padding:20px;
+    }
+
+    /* top header padding */
+    .header-top__container{
+        padding: 0 0 0;
+    }
+
+    /* second top header padding */
+    .header__container {
+        padding: 0 0 0;
+    }
+    
