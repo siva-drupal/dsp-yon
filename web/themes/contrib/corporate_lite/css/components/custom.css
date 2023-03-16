@@ -82,3 +82,10 @@
         padding: 0 0 0;
     }
     
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 10px 20x 10px 20px #ccc;
+    }
