@@ -8,7 +8,7 @@ dependencies:
     - taxonomy
 third_party_settings:
   field_permissions:
-    permission_type: public
+    permission_type: custom
 id: profile.field_military_department
 field_name: field_military_department
 entity_type: profile

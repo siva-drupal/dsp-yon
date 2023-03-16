@@ -1,0 +1,29 @@
+uuid: 94921ab8-0f29-4293-92c7-5cef57e5fe66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_highest_qualification
+    - profile.type.assistant_trainer
+    - taxonomy.vocabulary.highest_qualification
+id: profile.assistant_trainer.field_highest_qualification
+field_name: field_highest_qualification
+entity_type: profile
+bundle: assistant_trainer
+label: 'Highest Qualification'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      highest_qualification: highest_qualification
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

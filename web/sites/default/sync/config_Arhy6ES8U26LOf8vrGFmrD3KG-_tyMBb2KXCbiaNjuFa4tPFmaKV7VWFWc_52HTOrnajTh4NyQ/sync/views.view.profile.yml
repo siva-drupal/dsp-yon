@@ -1,10 +1,7 @@
 uuid: 841f94a8-0f66-4f9d-bd4b-9f5434c0972c
 langcode: en
-status: true
+status: false
 dependencies:
-  config:
-    - field.storage.profile.field_course1
-    - field.storage.profile.field_highest_qualification2
   module:
     - eva
     - profile
@@ -110,69 +107,6 @@ display:
           action_title: Action
           include_exclude: exclude
           selected_actions: {  }
-        field_course1:
-          id: field_course1
-          table: profile__field_course1
-          field: field_course1
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: true
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         delta:
           id: delta
           table: profile__field_course_start_and_end_date1
@@ -230,69 +164,6 @@ display:
           prefix: ''
           suffix: ''
           plugin_id: numeric
-        field_highest_qualification2:
-          id: field_highest_qualification2
-          table: profile__field_highest_qualification2
-          field: field_highest_qualification2
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: true
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
       filters:
         status:
           value: '1'
@@ -318,11 +189,8 @@ display:
     cache_metadata:
       max-age: 0
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
-      tags:
-        - 'config:field.storage.profile.field_course1'
-        - 'config:field.storage.profile.field_highest_qualification2'
+      tags: {  }
   attachment_1:
     display_plugin: attachment
     id: attachment_1
@@ -333,11 +201,8 @@ display:
     cache_metadata:
       max-age: 0
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
-      tags:
-        - 'config:field.storage.profile.field_course1'
-        - 'config:field.storage.profile.field_highest_qualification2'
+      tags: {  }
   block_1:
     display_plugin: block
     id: block_1
@@ -348,11 +213,8 @@ display:
     cache_metadata:
       max-age: 0
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
-      tags:
-        - 'config:field.storage.profile.field_course1'
-        - 'config:field.storage.profile.field_highest_qualification2'
+      tags: {  }
   entity_view_1:
     display_plugin: entity_view
     id: entity_view_1
@@ -366,8 +228,5 @@ display:
     cache_metadata:
       max-age: 0
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
-      tags:
-        - 'config:field.storage.profile.field_course1'
-        - 'config:field.storage.profile.field_highest_qualification2'
+      tags: {  }

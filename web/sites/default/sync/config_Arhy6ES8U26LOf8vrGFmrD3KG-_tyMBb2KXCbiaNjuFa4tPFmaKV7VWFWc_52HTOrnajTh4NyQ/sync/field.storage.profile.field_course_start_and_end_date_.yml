@@ -4,7 +4,11 @@ status: true
 dependencies:
   module:
     - datetime
+    - field_permissions
     - profile
+third_party_settings:
+  field_permissions:
+    permission_type: custom
 id: profile.field_course_start_and_end_date_
 field_name: field_course_start_and_end_date_
 entity_type: profile

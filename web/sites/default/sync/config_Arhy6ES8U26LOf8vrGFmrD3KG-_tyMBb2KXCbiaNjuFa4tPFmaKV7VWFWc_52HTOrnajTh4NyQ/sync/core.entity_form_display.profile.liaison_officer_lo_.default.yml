@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.profile.liaison_officer_lo_.field_did
     - field.field.profile.liaison_officer_lo_.field_highest_qualification
-    - field.field.profile.liaison_officer_lo_.field_phone_number
+    - field.field.profile.liaison_officer_lo_.field_p
     - field.field.profile.liaison_officer_lo_.field_tenure
     - profile.type.liaison_officer_lo_
   module:
@@ -17,7 +17,7 @@ bundle: liaison_officer_lo_
 mode: default
 content:
   field_did:
-    weight: 0
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -25,7 +25,7 @@ content:
     type: text_textfield
     region: content
   field_highest_qualification:
-    weight: 26
+    weight: 2
     settings:
       limit: 10
       min_length: 0
@@ -41,15 +41,15 @@ content:
     third_party_settings: {  }
     type: autocomplete_deluxe
     region: content
-  field_phone_number:
-    weight: 1
+  field_p:
+    weight: 0
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_tenure:
-    weight: 2
+    weight: 3
     settings:
       size: 60
       placeholder: ''

@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.profile.liaison_officer_lo_.field_did
     - field.field.profile.liaison_officer_lo_.field_highest_qualification
-    - field.field.profile.liaison_officer_lo_.field_phone_number
+    - field.field.profile.liaison_officer_lo_.field_p
     - field.field.profile.liaison_officer_lo_.field_tenure
     - profile.type.liaison_officer_lo_
   module:
@@ -16,7 +16,7 @@ bundle: liaison_officer_lo_
 mode: default
 content:
   field_did:
-    weight: 0
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -30,8 +30,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_phone_number:
-    weight: 1
+  field_p:
+    weight: 0
     label: above
     settings:
       thousand_separator: ''

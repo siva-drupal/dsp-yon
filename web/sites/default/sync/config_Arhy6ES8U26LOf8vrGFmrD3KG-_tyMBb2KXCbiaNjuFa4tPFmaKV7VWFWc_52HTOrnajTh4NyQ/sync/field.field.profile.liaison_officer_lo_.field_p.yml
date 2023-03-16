@@ -1,0 +1,23 @@
+uuid: 1db71e23-67bd-4b6e-b2cd-016414c01d09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_p
+    - profile.type.liaison_officer_lo_
+id: profile.liaison_officer_lo_.field_p
+field_name: field_p
+entity_type: profile
+bundle: liaison_officer_lo_
+label: 'Phone Number'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

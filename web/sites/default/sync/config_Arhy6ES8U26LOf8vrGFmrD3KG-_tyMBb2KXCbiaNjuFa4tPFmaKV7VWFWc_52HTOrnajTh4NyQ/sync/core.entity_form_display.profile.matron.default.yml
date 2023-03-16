@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.profile.matron.field_highest_qualification4
-    - field.field.profile.matron.field_military_department2
-    - field.field.profile.matron.field_phone_number4
-    - field.field.profile.matron.field_rank2
-    - field.field.profile.matron.field_tenure3
+    - field.field.profile.matron.field_highest_qualification
+    - field.field.profile.matron.field_military_department
+    - field.field.profile.matron.field_p
+    - field.field.profile.matron.field_rank
+    - field.field.profile.matron.field_tenure
     - profile.type.matron
   module:
     - autocomplete_deluxe
@@ -16,8 +16,8 @@ targetEntityType: profile
 bundle: matron
 mode: default
 content:
-  field_highest_qualification4:
-    weight: 26
+  field_highest_qualification:
+    weight: 1
     settings:
       limit: 10
       min_length: 0
@@ -33,8 +33,8 @@ content:
     third_party_settings: {  }
     type: autocomplete_deluxe
     region: content
-  field_military_department2:
-    weight: 27
+  field_military_department:
+    weight: 2
     settings:
       limit: 10
       min_length: 0
@@ -50,15 +50,15 @@ content:
     third_party_settings: {  }
     type: autocomplete_deluxe
     region: content
-  field_phone_number4:
+  field_p:
     weight: 0
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
-  field_rank2:
-    weight: 28
+  field_rank:
+    weight: 3
     settings:
       limit: 10
       min_length: 0
@@ -74,7 +74,7 @@ content:
     third_party_settings: {  }
     type: autocomplete_deluxe
     region: content
-  field_tenure3:
+  field_tenure:
     weight: 4
     settings:
       size: 60

@@ -1,0 +1,19 @@
+uuid: e5fe5950-2c46-40c8-b6f5-0c3f0468353f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_tenure
+    - profile.type.warden
+id: profile.warden.field_tenure
+field_name: field_tenure
+entity_type: profile
+bundle: warden
+label: Tenure
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

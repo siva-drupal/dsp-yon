@@ -1,0 +1,18 @@
+uuid: b7842603-5697-4692-9f5d-590f59dc54e9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - corporate_lite
+id: pagetitle
+theme: corporate_lite
+region: content
+weight: -14
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

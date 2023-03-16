@@ -1,0 +1,21 @@
+uuid: 0960fda6-9ed0-47ad-a82b-02c658b28806
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_did
+    - profile.type.trainees
+  module:
+    - text
+id: profile.trainees.field_did
+field_name: field_did
+entity_type: profile
+bundle: trainees
+label: DID
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

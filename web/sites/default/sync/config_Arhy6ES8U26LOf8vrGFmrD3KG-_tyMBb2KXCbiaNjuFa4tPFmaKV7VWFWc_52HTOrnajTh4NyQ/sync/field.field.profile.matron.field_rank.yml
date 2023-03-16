@@ -1,0 +1,29 @@
+uuid: 5dee872a-a38a-4c93-9778-c3f796c87078
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_rank
+    - profile.type.matron
+    - taxonomy.vocabulary.rank
+id: profile.matron.field_rank
+field_name: field_rank
+entity_type: profile
+bundle: matron
+label: Rank
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      rank: rank
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

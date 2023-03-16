@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.profile.trainers.field_course1
-    - field.field.profile.trainers.field_course_start_and_end_date1
-    - field.field.profile.trainers.field_highest_qualification2
-    - field.field.profile.trainers.field_phone_number2
+    - field.field.profile.trainers.field_course
+    - field.field.profile.trainers.field_course_start_and_end_date_
+    - field.field.profile.trainers.field_highest_qualification
+    - field.field.profile.trainers.field_p
     - profile.type.trainers
   module:
     - autocomplete_deluxe
@@ -16,8 +16,8 @@ targetEntityType: profile
 bundle: trainers
 mode: default
 content:
-  field_course1:
-    weight: 26
+  field_course:
+    weight: 1
     settings:
       limit: 10
       min_length: 0
@@ -33,14 +33,14 @@ content:
     third_party_settings: {  }
     type: autocomplete_deluxe
     region: content
-  field_course_start_and_end_date1:
-    weight: 3
+  field_course_start_and_end_date_:
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_highest_qualification2:
-    weight: 27
+  field_highest_qualification:
+    weight: 3
     settings:
       limit: 10
       min_length: 0
@@ -56,8 +56,8 @@ content:
     third_party_settings: {  }
     type: autocomplete_deluxe
     region: content
-  field_phone_number2:
-    weight: 1
+  field_p:
+    weight: 0
     settings:
       placeholder: ''
     third_party_settings: {  }

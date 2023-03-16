@@ -3,19 +3,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.profile.warden.field_highest_qualification3
+    - field.field.profile.warden.field_highest_qualification
     - field.field.profile.warden.field_military_department
-    - field.field.profile.warden.field_phone_number3
-    - field.field.profile.warden.field_rank1
-    - field.field.profile.warden.field_tenure2
+    - field.field.profile.warden.field_p
+    - field.field.profile.warden.field_rank
+    - field.field.profile.warden.field_tenure
     - profile.type.warden
 id: profile.warden.default
 targetEntityType: profile
 bundle: warden
 mode: default
 content:
-  field_highest_qualification3:
-    weight: 3
+  field_highest_qualification:
+    weight: 5
     label: above
     settings:
       link: true
@@ -30,24 +30,25 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_phone_number3:
-    weight: 0
+  field_p:
+    weight: 6
     label: above
     settings:
-      link_to_entity: false
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    type: string
+    type: number_integer
     region: content
-  field_rank1:
-    weight: 2
+  field_rank:
+    weight: 8
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_tenure2:
-    weight: 4
+  field_tenure:
+    weight: 7
     label: above
     settings:
       link_to_entity: false

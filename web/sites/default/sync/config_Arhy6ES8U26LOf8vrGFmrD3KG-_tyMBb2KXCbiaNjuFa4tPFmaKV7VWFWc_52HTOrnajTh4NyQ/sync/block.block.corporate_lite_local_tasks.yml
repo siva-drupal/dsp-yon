@@ -9,7 +9,7 @@ _core:
 id: corporate_lite_local_tasks
 theme: corporate_lite
 region: content
-weight: -10
+weight: -11
 provider: null
 plugin: local_tasks_block
 settings:

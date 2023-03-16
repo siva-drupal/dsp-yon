@@ -1,0 +1,23 @@
+uuid: ab416bdf-d80d-4ade-afab-aed9a59d9e41
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_p
+    - profile.type.matron
+id: profile.matron.field_p
+field_name: field_p
+entity_type: profile
+bundle: matron
+label: 'Phone Number'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

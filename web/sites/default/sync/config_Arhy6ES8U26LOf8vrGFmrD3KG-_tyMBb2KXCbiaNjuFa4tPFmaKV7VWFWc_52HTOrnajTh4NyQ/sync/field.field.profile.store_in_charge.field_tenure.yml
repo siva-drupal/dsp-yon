@@ -1,0 +1,19 @@
+uuid: 0a80d82e-b357-4c67-a962-bfa5bd798484
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_tenure
+    - profile.type.store_in_charge
+id: profile.store_in_charge.field_tenure
+field_name: field_tenure
+entity_type: profile
+bundle: store_in_charge
+label: Tenure
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

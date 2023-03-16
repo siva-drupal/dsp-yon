@@ -1,0 +1,23 @@
+uuid: 9e2ae22f-c2ef-4757-a618-9f0cd66db067
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_p
+    - profile.type.trainers
+id: profile.trainers.field_p
+field_name: field_p
+entity_type: profile
+bundle: trainers
+label: 'Phone Number'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

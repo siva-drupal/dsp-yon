@@ -1,0 +1,29 @@
+uuid: 78179279-42fd-4b01-9b3b-93bddbad286e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_military_department
+    - profile.type.officer_in_charge_oic_
+    - taxonomy.vocabulary.military_department
+id: profile.officer_in_charge_oic_.field_military_department
+field_name: field_military_department
+entity_type: profile
+bundle: officer_in_charge_oic_
+label: 'Military Department'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      military_department: military_department
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

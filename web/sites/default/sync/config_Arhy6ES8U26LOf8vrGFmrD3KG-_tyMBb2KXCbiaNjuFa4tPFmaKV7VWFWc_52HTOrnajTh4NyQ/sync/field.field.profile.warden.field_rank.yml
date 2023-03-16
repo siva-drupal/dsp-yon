@@ -1,0 +1,29 @@
+uuid: fbb0f537-6fe6-47d6-87f6-eaee19e95541
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_rank
+    - profile.type.warden
+    - taxonomy.vocabulary.rank
+id: profile.warden.field_rank
+field_name: field_rank
+entity_type: profile
+bundle: warden
+label: Rank
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      rank: rank
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

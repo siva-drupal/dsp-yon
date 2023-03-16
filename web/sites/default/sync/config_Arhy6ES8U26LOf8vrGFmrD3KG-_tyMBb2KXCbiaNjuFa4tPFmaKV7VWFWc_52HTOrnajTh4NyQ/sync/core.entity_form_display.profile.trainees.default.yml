@@ -5,9 +5,9 @@ dependencies:
   config:
     - field.field.profile.trainees.field_course
     - field.field.profile.trainees.field_course_start_and_end_date_
-    - field.field.profile.trainees.field_did2
-    - field.field.profile.trainees.field_highest_qualification1
-    - field.field.profile.trainees.field_p_number
+    - field.field.profile.trainees.field_did
+    - field.field.profile.trainees.field_highest_qualification
+    - field.field.profile.trainees.field_p
     - profile.type.trainees
   module:
     - autocomplete_deluxe
@@ -19,7 +19,7 @@ bundle: trainees
 mode: default
 content:
   field_course:
-    weight: 26
+    weight: 2
     settings:
       limit: 10
       min_length: 0
@@ -41,7 +41,7 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_did2:
+  field_did:
     weight: 0
     settings:
       size: 60
@@ -49,8 +49,8 @@ content:
     third_party_settings: {  }
     type: text_textfield
     region: content
-  field_highest_qualification1:
-    weight: 27
+  field_highest_qualification:
+    weight: 4
     settings:
       limit: 10
       min_length: 0
@@ -66,7 +66,7 @@ content:
     third_party_settings: {  }
     type: autocomplete_deluxe
     region: content
-  field_p_number:
+  field_p:
     weight: 1
     settings:
       placeholder: ''
