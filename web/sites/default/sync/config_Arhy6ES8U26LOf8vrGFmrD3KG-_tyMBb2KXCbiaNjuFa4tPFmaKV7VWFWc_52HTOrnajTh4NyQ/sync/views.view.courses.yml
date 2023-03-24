@@ -4,11 +4,16 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_course_status
+    - field.storage.node.field_end_date
+    - field.storage.node.field_start_date
     - node.type.course
     - system.menu.main
+    - taxonomy.vocabulary.course
   module:
+    - datetime
     - node
     - options
+    - taxonomy
     - user
 id: courses
 label: Courses
@@ -119,6 +124,134 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_end_date:
+          id: field_end_date
+          table: node__field_end_date
+          field: field_end_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'End Date'
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_custom
+          settings:
+            timezone_override: ''
+            date_format: d/m/y
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_start_date:
+          id: field_start_date
+          table: node__field_start_date
+          field: field_start_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Start Date'
+          exclude: false
+          alter:
+            alter_text: true
+            text: '{{ field_start_date }} to {{ field_end_date }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_custom
+          settings:
+            timezone_override: ''
+            date_format: d/m/y
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_course_status:
           id: field_course_status
           table: node__field_course_status
@@ -302,6 +435,61 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: string
+        field_course_reference_target_id:
+          id: field_course_reference_target_id
+          table: node__field_course_reference
+          field: field_course_reference_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_course_reference_target_id_op
+            label: 'Select Course'
+            description: ''
+            use_operator: false
+            operator: field_course_reference_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_course_reference_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              liaison_officer_lo_: '0'
+              officer_in_charge_oic_: '0'
+              trainer: '0'
+              trainees: '0'
+              warden: '0'
+              matron: '0'
+              store_in_charge: '0'
+              assistant_trainer: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: course
+          hierarchy: true
+          error_message: true
+          plugin_id: taxonomy_index_tid
       sorts:
         created:
           id: created
@@ -332,10 +520,13 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.node.field_course_status'
+        - 'config:field.storage.node.field_end_date'
+        - 'config:field.storage.node.field_start_date'
   page_1:
     display_plugin: page
     id: page_1
@@ -361,7 +552,10 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.node.field_course_status'
+        - 'config:field.storage.node.field_end_date'
+        - 'config:field.storage.node.field_start_date'

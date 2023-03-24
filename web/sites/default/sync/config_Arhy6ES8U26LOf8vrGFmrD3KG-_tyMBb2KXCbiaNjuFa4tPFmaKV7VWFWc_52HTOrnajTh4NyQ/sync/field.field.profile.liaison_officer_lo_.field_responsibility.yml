@@ -1,0 +1,29 @@
+uuid: bfab02de-4fdd-455a-a2f1-33efb004263a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_responsibility
+    - profile.type.liaison_officer_lo_
+    - taxonomy.vocabulary.lo_responsibility
+id: profile.liaison_officer_lo_.field_responsibility
+field_name: field_responsibility
+entity_type: profile
+bundle: liaison_officer_lo_
+label: Responsibility
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      lo_responsibility: lo_responsibility
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

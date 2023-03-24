@@ -1,0 +1,23 @@
+uuid: ec5b9a7f-584a-490c-9b7a-1ea442fcad14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_training_provioder
+    - node.type.course
+  module:
+    - link
+id: node.course.field_training_provioder
+field_name: field_training_provioder
+entity_type: node
+bundle: course
+label: 'Training Provioder'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

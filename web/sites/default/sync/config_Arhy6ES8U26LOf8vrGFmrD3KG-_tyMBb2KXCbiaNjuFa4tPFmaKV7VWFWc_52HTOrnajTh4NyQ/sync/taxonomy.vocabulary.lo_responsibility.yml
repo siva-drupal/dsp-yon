@@ -1,0 +1,8 @@
+uuid: fcfe2c19-695d-452a-8f75-934ed6d294d6
+langcode: en
+status: true
+dependencies: {  }
+name: 'LO Responsibility'
+vid: lo_responsibility
+description: ''
+weight: 0

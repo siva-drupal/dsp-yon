@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.home_slider.field_slider_image
     - field.field.node.home_slider.field_slider_link
+    - image.style.flexslider_full
     - node.type.home_slider
   module:
     - image
@@ -19,7 +20,7 @@ content:
     weight: 2
     label: above
     settings:
-      image_style: ''
+      image_style: flexslider_full
       image_link: ''
     third_party_settings: {  }
     type: image

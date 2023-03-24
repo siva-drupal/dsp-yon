@@ -5,13 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.course.body
-    - field.field.node.course.field_course
     - field.field.node.course.field_course_reference
     - field.field.node.course.field_course_status
     - field.field.node.course.field_end_date
     - field.field.node.course.field_start_date
     - field.field.node.course.field_training_center
-    - field.field.node.course.field_training_provider
+    - field.field.node.course.field_training_provioder
     - node.type.course
   module:
     - text
@@ -35,10 +34,9 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_course: true
   field_course_reference: true
   field_course_status: true
   field_end_date: true
   field_start_date: true
   field_training_center: true
-  field_training_provider: true
+  field_training_provioder: true

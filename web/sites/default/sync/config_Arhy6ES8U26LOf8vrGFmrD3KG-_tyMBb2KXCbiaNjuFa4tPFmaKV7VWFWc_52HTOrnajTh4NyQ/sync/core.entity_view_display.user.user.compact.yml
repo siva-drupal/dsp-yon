@@ -11,7 +11,6 @@ dependencies:
     - field.field.user.user.field_name
     - field.field.user.user.field_training_center
   module:
-    - options
     - user
 _core:
   default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
@@ -20,46 +19,9 @@ targetEntityType: user
 bundle: user
 mode: compact
 content:
-  field_ch:
-    type: list_key
-    weight: 11
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  field_gender:
-    type: list_default
-    weight: 2
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  field_last_name:
-    type: string
-    weight: 1
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_name:
-    type: string
-    weight: 0
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_training_center:
-    type: list_default
-    weight: 3
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
   liaison_officer_lo__profiles:
     type: entity_reference_label
-    weight: 4
+    weight: 0
     region: content
     label: above
     settings:
@@ -67,33 +29,28 @@ content:
     third_party_settings: {  }
   matron_profiles:
     type: entity_reference_label
-    weight: 5
+    weight: 1
     region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
-  member_for:
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   officer_in_charge_oic__profiles:
     type: entity_reference_label
-    weight: 6
+    weight: 2
     region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
   profiles_entity_view_1:
-    weight: 10
+    weight: 6
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   trainees_profiles:
     type: entity_reference_label
-    weight: 7
+    weight: 3
     region: content
     label: above
     settings:
@@ -101,7 +58,7 @@ content:
     third_party_settings: {  }
   trainers_profiles:
     type: entity_reference_label
-    weight: 8
+    weight: 4
     region: content
     label: above
     settings:
@@ -109,7 +66,7 @@ content:
     third_party_settings: {  }
   warden_profiles:
     type: entity_reference_label
-    weight: 9
+    weight: 5
     region: content
     label: above
     settings:
@@ -117,5 +74,11 @@ content:
     third_party_settings: {  }
 hidden:
   assistant_trainer_profiles: true
+  field_ch: true
+  field_gender: true
   field_image: true
+  field_last_name: true
+  field_name: true
+  field_training_center: true
+  member_for: true
   store_in_charge_profiles: true

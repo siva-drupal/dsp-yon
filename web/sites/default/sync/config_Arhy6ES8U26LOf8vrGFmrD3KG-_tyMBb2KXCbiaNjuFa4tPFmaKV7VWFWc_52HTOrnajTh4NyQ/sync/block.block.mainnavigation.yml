@@ -10,8 +10,8 @@ dependencies:
     - corporate_lite
 id: mainnavigation
 theme: corporate_lite
-region: header_third
-weight: -12
+region: header
+weight: -14
 provider: null
 plugin: 'superfish:main'
 settings:

@@ -49,7 +49,7 @@
 
     /* flexsilder */
     .flexslider .slides img{
-        height:500px;
+        /*height:500px;*/
     }
 
     /* Sticky Navbar */
@@ -88,4 +88,22 @@
         margin: 0 auto;
         border-radius: 10px;
         box-shadow: 10px 20x 10px 20px #ccc;
+    }
+
+    /* text align */
+    h1.field-content{
+        text-align: center;
+    }
+    .viwes-field .views-field-title, h1{
+        text-align: center;
+        font-size:36px;
+        font-weight: 400;
+    }
+    /* aligning the icon with the text in feedback form */
+    .contact-info ul li{
+       padding:0;
+    }
+/* aligning menu  */
+    #superfish-main{
+        padding-left:200px;
     }

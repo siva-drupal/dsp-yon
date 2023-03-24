@@ -1,12 +1,10 @@
-uuid: 45df9816-35c7-4e37-9836-891aba73c655
+uuid: d72c3a07-60e0-4185-8502-b95db5f072a5
 langcode: en
 status: true
 dependencies:
   theme:
     - corporate_lite
-_core:
-  default_config_hash: 07UvOJvrEeLC7WKhrx5PcLo8BQviyZVgfIK3uv9_86s
-id: corporate_lite_local_tasks
+id: tabs
 theme: corporate_lite
 region: content
 weight: -11

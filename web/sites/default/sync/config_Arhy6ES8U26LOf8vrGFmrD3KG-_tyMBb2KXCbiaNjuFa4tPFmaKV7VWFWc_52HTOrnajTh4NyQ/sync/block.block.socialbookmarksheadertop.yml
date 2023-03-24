@@ -11,7 +11,7 @@ dependencies:
 id: socialbookmarksheadertop
 theme: corporate_lite
 region: header_top_second
-weight: -10
+weight: -15
 provider: null
 plugin: 'block_content:6fd4d9fc-3d17-4c67-b4a4-86b8069f0ffc'
 settings:

@@ -7,11 +7,11 @@ _core:
 name: flexslider_full
 label: 'Flexslider Full'
 effects:
-  7c3142f8-ebf5-4cb3-9815-2140c9ef8466:
-    uuid: 7c3142f8-ebf5-4cb3-9815-2140c9ef8466
+  7728e7a6-261f-44bd-9631-1e61b4832a6d:
+    uuid: 7728e7a6-261f-44bd-9631-1e61b4832a6d
     id: image_scale_and_crop
     weight: 1
     data:
-      width: 800
-      height: 500
+      width: 1920
+      height: 700
       anchor: center-center

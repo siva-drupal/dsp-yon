@@ -1,8 +1,0 @@
-uuid: 952720d8-729d-46a4-9d96-b2ac06c55d26
-langcode: en
-status: true
-dependencies: {  }
-name: 'Events Course'
-vid: events_course
-description: ''
-weight: 0

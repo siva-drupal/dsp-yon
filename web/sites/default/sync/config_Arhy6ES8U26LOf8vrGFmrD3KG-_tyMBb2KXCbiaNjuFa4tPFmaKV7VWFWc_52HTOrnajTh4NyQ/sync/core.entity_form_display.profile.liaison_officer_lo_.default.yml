@@ -6,6 +6,7 @@ dependencies:
     - field.field.profile.liaison_officer_lo_.field_did
     - field.field.profile.liaison_officer_lo_.field_highest_qualification
     - field.field.profile.liaison_officer_lo_.field_p
+    - field.field.profile.liaison_officer_lo_.field_responsibility
     - field.field.profile.liaison_officer_lo_.field_tenure
     - profile.type.liaison_officer_lo_
   module:
@@ -47,6 +48,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_responsibility:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_tenure:
     weight: 3
